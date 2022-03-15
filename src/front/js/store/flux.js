@@ -1,6 +1,9 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			username: "",
+			password: "",
+
 			message: null,
 			demo: [
 				{

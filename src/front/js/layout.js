@@ -9,6 +9,8 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { HealthCareLogin } from "./component/healthcarelogin";
+import { PatientLogin } from "./component/patientlogin";
 
 //create your first component
 const Layout = () => {
@@ -29,8 +31,11 @@ const Layout = () => {
 							<Demo />
 						</Route>
 						<Route exact path="/single/:theid">
+
 							<Single />
 						</Route>
+						<Route exact path="/healthcarelogin" component={HealthCareLogin} />
+						<Route exact path="/patientlogin" component={PatientLogin} />
 						<Route>
 							<h1>Not found!</h1>
 						</Route>

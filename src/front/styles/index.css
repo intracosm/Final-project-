@@ -1,3 +1,25 @@
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */
+
+/* .doctor {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI2c0rLMBvo2736yfP63UpB0J2mJEmfrCub15LXQvamxb0zSC21X9GhTb4OP3UCwIeK4M&usqp=CAU);
+}
+
+.doctor input {
+  width: 300px;
+  height: 300px;
+}
+*/
+.doctor {
+  width: 200px;
+  height: 400px;
+}
+.card-img {
+  width: 100%;
+}
+
+.patient {
+  width: 200px;
+  height: 400px;
+}
