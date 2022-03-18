@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
+import { Planner } from "./component/planner";
 
 import { Home } from "./pages/home";
 import { Demo } from "./pages/demo";
@@ -36,6 +37,7 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/healthcarelogin" component={HealthCareLogin} />
 						<Route exact path="/patientlogin" component={PatientLogin} />
+						<Route exact path="/planner" component={Planner} />
 						<Route>
 							<h1>Not found!</h1>
 						</Route>
