@@ -1,6 +1,8 @@
 const getState = ({ getStore, getActions, setStore }) => {
+
 	return {
 		store: {
+
 
 			appointments: [
 				{
@@ -82,7 +84,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then(resp => resp.json())
 					.then(data => setStore({ message: data.message }))
 					.catch(error => console.log("Error loading message from backend", error));
-			}
+			},
+
+
+
+
+
+
 
 
 
