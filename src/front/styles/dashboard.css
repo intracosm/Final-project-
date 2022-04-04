@@ -1,0 +1,96 @@
+span {
+  padding-left: 3px;
+  padding-right: 5px;
+}
+h2 {
+  padding-left: 3px;
+}
+.container-fluid {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul li:hover {
+  background: rgb(240, 240, 240);
+}
+
+.linnk {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  display: flex;
+}
+li .icon {
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+li .icon .fas {
+  color: black;
+  font-size: 24px;
+}
+ul li .title {
+  display: block;
+
+  line-height: 60px;
+  height: 60;
+  white-space: nowrap;
+  color: black;
+}
+.nav {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.nav1 {
+  margin-top: 50px;
+}
+.long-card-div {
+  margin: 0;
+}
+.long-card {
+}
+
+.short-card-div {
+  float: right;
+  margin: 0;
+}
+.short-card {
+}
+.card1-div {
+  float: left;
+  margin: 0;
+}
+.card1 {
+}
+.dashpage {
+  background-color: whitesmoke;
+}
+.offcanvas {
+  background-color: whitesmoke;
+}
+.image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.username {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.div-border {
+  border-top: 1px solid black;
+  margin-top: 10px;
+  background: rgb(231, 231, 231);
+}
+
+.dash-word {
+  margin-left: 10px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}

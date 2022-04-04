@@ -7,8 +7,8 @@ import { Home } from "./pages/home";
 import { Demo } from "./pages/demo";
 import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
+import { Dashboard } from "./pages/dashboard";
 
-import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { HealthCareLogin } from "./component/healthcarelogin";
 import { PatientLogin } from "./component/patientlogin";
@@ -23,7 +23,6 @@ const Layout = () => {
 		<div>
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
-					<Navbar />
 					<Switch>
 						<Route exact path="/">
 							<Home />
@@ -38,6 +37,7 @@ const Layout = () => {
 						<Route exact path="/healthcarelogin" component={HealthCareLogin} />
 						<Route exact path="/patientlogin" component={PatientLogin} />
 						<Route exact path="/planner" component={Planner} />
+						<Route exact path="/dashboard" component={Dashboard} />
 						<Route>
 							<h1>Not found!</h1>
 						</Route>
