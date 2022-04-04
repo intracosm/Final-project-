@@ -42,7 +42,7 @@ export const Navbar = () => {
 								</Link>
 							</li>
 							<li className="nav-item">
-								<Link className="linnk" to="">
+								<Link className="linnk" to="/planner">
 									<span className="icon"><i className="fas fa-calendar-check"></i></span>
 									<span className="title">Calendar</span>
 								</Link>

@@ -94,3 +94,12 @@ ul li .title {
   margin-bottom: 0;
   margin-top: 30px;
 }
+
+.editBtn {
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.bigDiv {
+  justify-content: center;
+}
