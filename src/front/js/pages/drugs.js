@@ -2,11 +2,17 @@ import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import "../../styles/home.css";
+import { Redirect } from 'react-router-dom';
 
 export const Drugs = () => {
     const { store, actions } = useContext(Context);
     const [drug, setDrug] = useState([]);
     const [input, setInput] = useState("");
+    const cardClick = () => {
+        return (
+            <Redirect to="https://www.google.com/" />
+        )
+    }
 
 
 
@@ -31,7 +37,7 @@ export const Drugs = () => {
 
     return (
         <div className="">
-            <h3>Example conditions to search for: Leukemia, Ischemic Stroke, Abdominal Distention  </h3>
+            <h3>Example conditions to search for: Leukemia, Ischemic Stroke, Abdominal Distension, Premenstrual Syndrome, Edema, etc. </h3>
             <input type="text" value={input} onChange={(e) => {
                 setInput(e.target.value)
 
@@ -40,7 +46,7 @@ export const Drugs = () => {
             {
                 drug.length > 0 ? drug.map((item, index) => {
                     return (
-                        <div className="card" style={{ width: "18rem" }}>
+                        <div onClick={(e) => cardClick()} className="card" style={{ width: "18rem" }}>
                             <div className="card-body">
                                 <h5 className="card-title">{item.drug}</h5>
                                 <p className="card-text">Disease: {item.disease}</p>
