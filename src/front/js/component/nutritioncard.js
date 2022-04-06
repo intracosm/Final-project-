@@ -21,9 +21,11 @@ export const Nutritioncard = (props) => {
                 {show && (
                     <div className="card-body">
                         {store.nutrition.length > 0 && (
-                            <p>
-                                {nutrition.sample}
-                            </p>
+                            <Link to={{ pathname: "/nutritionalfacts/" + props.ID, state: { props } }}>
+                                <p>
+                                    {nutrition && nutrition.sample}
+                                </p>
+                            </Link>
                         )}
                     </div>
                 )}

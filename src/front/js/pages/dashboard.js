@@ -10,7 +10,6 @@ import { Card } from "../component/card";
 import { Longcard } from "../component/longcard";
 
 import { Exercisecard } from "../component/exercisecard";
-import { Shortcard } from "../component/shortcard";
 import { FunFact } from "../component/funfact";
 
 
@@ -40,8 +39,6 @@ export const Dashboard = () => {
                     <DailyMotivation />
 
                     <Exercisecard />
-                    <Shortcard
-                        title="Exercise Log" />
 
                     <FunFact />
                 </div>

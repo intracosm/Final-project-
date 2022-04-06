@@ -21,7 +21,7 @@ export const Exercisecard = (props) => {
                 {show && (
                     <div className="card-body">
                         {store.exercises.length > 0 && (
-                            <Link to="/exercises"><p>
+                            <Link className="cardbutton" to="/exercises"><p>
                                 {exercises.name}
                             </p></Link>
                         )}

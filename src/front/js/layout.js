@@ -5,7 +5,7 @@ import { Planner } from "./component/planner";
 
 import { Home } from "./pages/home";
 import { Demo } from "./pages/demo";
-import { Single } from "./pages/single";
+
 import injectContext from "./store/appContext";
 import { Dashboard } from "./pages/dashboard";
 import { Exercise } from "./pages/exercises";
@@ -15,6 +15,8 @@ import { DetailedMed } from "./pages/medicationdetails";
 import { Footer } from "./component/footer";
 import { HealthCareLogin } from "./component/healthcarelogin";
 import { PatientLogin } from "./component/patientlogin";
+import { Nutritionalfacts } from "./pages/nutritionalfacts";
+
 
 //create your first component
 const Layout = () => {
@@ -33,10 +35,10 @@ const Layout = () => {
 						<Route exact path="/demo">
 							<Demo />
 						</Route>
-						<Route exact path="/single/:theid">
 
-							<Single />
-						</Route>
+
+
+
 						<Route exact path="/healthcarelogin" component={HealthCareLogin} />
 						<Route exact path="/patientlogin" component={PatientLogin} />
 						<Route exact path="/planner" component={Planner} />
@@ -44,6 +46,7 @@ const Layout = () => {
 						<Route exact path="/exercises" component={Exercise} />
 						<Route exact path="/detailedmed" component={DetailedMed} />
 
+						<Route exact path="/nutritionalfacts/:id" component={Nutritionalfacts} />
 						<Route exact path="/medications" component={Drugs} />
 						<Route>
 							<h1>Not found!</h1>
