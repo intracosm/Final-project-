@@ -8,13 +8,10 @@ import { Nutritioncard } from "../component/nutritioncard";
 
 import { Card } from "../component/card";
 import { Longcard } from "../component/longcard";
-<<<<<<< HEAD
 
 import { Exercisecard } from "../component/exercisecard";
-=======
-import { Shortcard } from "../component/shortcard";
+
 import { FunFact } from "../component/funfact";
->>>>>>> d3786a6353b4c3e27ef9bf91064c6b726923871d
 
 
 
@@ -42,14 +39,9 @@ export const Dashboard = () => {
                     <Nutritioncard />
                     <DailyMotivation />
 
-<<<<<<< HEAD
                     <Exercisecard />
-=======
-                    <Shortcard
-                        title="Exercise Log" />
 
                     <FunFact />
->>>>>>> d3786a6353b4c3e27ef9bf91064c6b726923871d
                 </div>
 
             </div>

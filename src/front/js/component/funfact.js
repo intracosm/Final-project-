@@ -51,7 +51,7 @@ export const FunFact = (props) => {
 };
 
 
-FunFact.PropTypes = {
+FunFact.propTypes = {
     title: PropTypes.string,
     date: PropTypes.string,
     body: PropTypes.string
