@@ -10,7 +10,6 @@ import { Card } from "../component/card";
 import { Longcard } from "../component/longcard";
 
 import { Exercisecard } from "../component/exercisecard";
-
 import { FunFact } from "../component/funfact";
 
 
