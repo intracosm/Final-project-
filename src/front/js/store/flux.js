@@ -3,7 +3,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			exercises: [],
 			quotes: [],
-<<<<<<< HEAD
 			nutrition: [
 				{
 					name: "Bananas",
@@ -31,9 +30,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 					body: "The potential therapeutic benefits of garlic primarily come from its bioactive compounds, including organic sulfides, saponins, phenolic compounds, and polysaccharides. Keep in mind that many studies on the health benefits of garlic involve garlic supplements and not the garlic you buy at the store. So you may not gain the health benefits of garlic simply by using it in your cooking unless you consume amounts that are equivalent to amounts found in supplements. Studies have shown garlic to produce potent anti-inflammatory effects by decreasing biomarkers of inflammation. A double-blind randomized clinical trial showed a significant reduction of inflammatory cytokines with a 400 mg dose of garlic extract given twice a day for eight weeks. Keep in mind this study used an extract and may not reflect real-life consumption of garlic. Also, Garlic has been shown to lower serum cholesterol levels. Patients with diabetes who were given a combination of olive oil and garlic were able to regulate cholesterol and triglyceride levels. These effects were seen with garlic in powder or non-powdered form dosed over one to three months. After four months, the garlic consumption raised HDL (good cholesterol) and lowered LDL (bad cholesterol) and total cholesterol levels."
 				},
 			],
-=======
-			facts: [],
->>>>>>> d3786a6353b4c3e27ef9bf91064c6b726923871d
 			appointments: [
 				{
 					text: "Website Re-Design Plan",
@@ -128,7 +124,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("Error loading message from backend", error)
 					);
 			},
-<<<<<<< HEAD
 			getExercise: () => {
 				const options = {
 					method: 'GET',
@@ -143,10 +138,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then(response => setStore({ exercises: response }))
 					.catch(err => console.error(err));
 			}
-=======
-
-
->>>>>>> d3786a6353b4c3e27ef9bf91064c6b726923871d
 		},
 	};
 };

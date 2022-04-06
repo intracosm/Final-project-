@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useLocation } from "react";
-
+import React, { useState, useEffect, } from "react";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 
 export const DetailedMed = () => {
@@ -13,7 +13,7 @@ export const DetailedMed = () => {
 		let arr = str.split("(");
 		let newStr = arr[0].trim();
 
-		fetch(`https://api.fda.gov/drug/label.json?search=adverse_reactions:${newStr}`)
+		fetch(`https://api.fda.gov/drug/label.json?search=adverse_reactions:adderall`)
 			.then(function (response) {
 				if (!response.ok) {
 					throw Error(response.statusText);
@@ -33,29 +33,11 @@ export const DetailedMed = () => {
 		<div className="container ">
 			<div className="row">
 				<div className="col-12">
-					<h1>{location.state.medication.medicationName}</h1>
+					{/* <h1>{location.state.medication.medicationName}</h1> */}
 				</div>
 			</div>
-			<div className="row">
-				<div className="col-12">
-					<p>Current dose of this medicaion: {location.state.medication.dose}</p>
-					<p>
-						I am currently taking {location.state.medication.medicationName} so often:{" "}
-						{location.state.medication.frequency}
-					</p>
-					<p>
-						I am currently taking {location.state.medication.medicationName} to target:{" "}
-						{location.state.medication.reason}
-					</p>
-					<p>
-						Side effect I have from taking {location.state.medication.medicationName}:{" "}
-						{location.state.medication.sideEffects}
-					</p>
-				</div>
-			</div>
-			<Link to="/DashboardHome">
-				<button className="btn btn-primary">Back to Dashboard</button>
-			</Link>
+
+
 			<div className="row">
 				<div>
 					{/* Nav tabs start */}
