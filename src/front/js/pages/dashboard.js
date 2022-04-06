@@ -8,6 +8,7 @@ import { DailyMotivation } from "../component/dailymotivation";
 import { Card } from "../component/card";
 import { Longcard } from "../component/longcard";
 import { Shortcard } from "../component/shortcard";
+import { FunFact } from "../component/funfact";
 
 
 
@@ -38,6 +39,8 @@ export const Dashboard = () => {
 
                     <Shortcard
                         title="Exercise Log" />
+
+                    <FunFact />
                 </div>
 
             </div>

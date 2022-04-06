@@ -8,6 +8,7 @@ import { Demo } from "./pages/demo";
 import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
 import { Dashboard } from "./pages/dashboard";
+import { Drugs } from "./pages/drugs";
 
 import { Footer } from "./component/footer";
 import { HealthCareLogin } from "./component/healthcarelogin";
@@ -38,6 +39,7 @@ const Layout = () => {
 						<Route exact path="/patientlogin" component={PatientLogin} />
 						<Route exact path="/planner" component={Planner} />
 						<Route exact path="/dashboard" component={Dashboard} />
+						<Route exact path="/medications" component={Drugs} />
 						<Route>
 							<h1>Not found!</h1>
 						</Route>

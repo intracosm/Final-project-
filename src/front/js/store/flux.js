@@ -2,6 +2,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			quotes: [],
+			facts: [],
 			appointments: [
 				{
 					text: "Website Re-Design Plan",
@@ -96,6 +97,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("Error loading message from backend", error)
 					);
 			},
+
+
 		},
 	};
 };
