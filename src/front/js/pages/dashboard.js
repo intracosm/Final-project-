@@ -4,10 +4,12 @@ import { Navbar } from "../component/navbar";
 import { Context } from "../store/appContext";
 import "../../styles/dashboard.css"
 import { DailyMotivation } from "../component/dailymotivation";
+import { Nutritioncard } from "../component/nutritioncard";
 
 import { Card } from "../component/card";
 import { Longcard } from "../component/longcard";
-import { Shortcard } from "../component/shortcard";
+
+import { Exercisecard } from "../component/exercisecard";
 
 
 
@@ -32,12 +34,10 @@ export const Dashboard = () => {
                     <Longcard />
                 </div>
                 <div className="short-card-div">
-                    <Shortcard
-                        title="Nutritional Fact Of The Day" />
+                    <Nutritioncard />
                     <DailyMotivation />
 
-                    <Shortcard
-                        title="Exercise Log" />
+                    <Exercisecard />
                 </div>
 
             </div>

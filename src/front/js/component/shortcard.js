@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 
 
 export const Shortcard = (props) => {
@@ -16,8 +16,8 @@ export const Shortcard = (props) => {
     )
 }
 
-Shortcard.PropTypes = {
-    title: PropTypes.string,
-    date: PropTypes.string,
-    body: PropTypes.string
+Shortcard.propTypes = {
+    title: propTypes.string,
+    date: propTypes.string,
+    body: propTypes.string
 }

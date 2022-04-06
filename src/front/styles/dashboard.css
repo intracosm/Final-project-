@@ -40,7 +40,7 @@ ul li .title {
   white-space: nowrap;
   color: black;
 }
-.nav {
+.spacing {
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -50,15 +50,12 @@ ul li .title {
 .long-card-div {
   margin: 0;
 }
-.long-card {
-}
 
 .short-card-div {
   float: right;
   margin: 0;
 }
-.short-card {
-}
+
 .card1-div {
   float: left;
   margin: 0;

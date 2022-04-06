@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 import { Context } from "../store/appContext";
 
 
@@ -17,7 +17,7 @@ export const DailyMotivation = (props) => {
 
     return (
         <div className="short-card card m-3" style={{ width: "18rem" }}>
-            <h5 className="card-header">Daily Motivation</h5>
+            <h4 className="card-header">Daily Motivation</h4>
             {show && (
                 <div className="card-body">
                     <h5 className="card-title"></h5>
@@ -32,8 +32,8 @@ export const DailyMotivation = (props) => {
     )
 }
 
-DailyMotivation.PropTypes = {
-    title: PropTypes.string,
-    date: PropTypes.string,
-    body: PropTypes.string
+DailyMotivation.propTypes = {
+    title: propTypes.string,
+    date: propTypes.string,
+    body: propTypes.string
 }

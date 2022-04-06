@@ -12,7 +12,7 @@ export const Navbar = () => {
 
 	return (
 
-		<nav className="nav navbar navbar-dark bg-primary fixed-top">
+		<nav className="navbar navbar-dark bg-primary spacing fixed-top">
 			<div className="container-fluid">
 				<button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span className="navbar-toggler-icon"></span>
