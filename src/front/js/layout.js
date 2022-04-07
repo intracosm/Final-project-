@@ -10,6 +10,7 @@ import injectContext from "./store/appContext";
 import { Dashboard } from "./pages/dashboard";
 import { Exercise } from "./pages/exercises";
 import { Drugs } from "./pages/drugs";
+import { DetailedMed } from "./pages/medicationdetails";
 
 import { Footer } from "./component/footer";
 import { HealthCareLogin } from "./component/healthcarelogin";
@@ -43,6 +44,8 @@ const Layout = () => {
 						<Route exact path="/planner" component={Planner} />
 						<Route exact path="/dashboard" component={Dashboard} />
 						<Route exact path="/exercises" component={Exercise} />
+						<Route exact path="/detailedmed" component={DetailedMed} />
+
 						<Route exact path="/nutritionalfacts/:id" component={Nutritionalfacts} />
 						<Route exact path="/medications" component={Drugs} />
 						<Route>
