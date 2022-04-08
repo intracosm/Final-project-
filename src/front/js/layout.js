@@ -19,7 +19,7 @@ import { DetailedMed } from "./pages/medicationdetails";
 import { Footer } from "./component/footer";
 
 import { PatientLogin } from "./component/patientlogin";
-import { NutritionalFacts } from "./pages/NutritionalFacts";
+import { NutritionalFacts } from "./pages/nutritionalfacts";
 
 
 //create your first component
