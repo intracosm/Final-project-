@@ -39,7 +39,7 @@ const Layout = () => {
 
 
 
-						<Route exact path="/healthcarelogin" component={HealthCareLogin} />
+						{/* <Route exact path="/healthcarelogin" component={HealthCareLogin} /> */}
 						<Route exact path="/patientlogin" component={PatientLogin} />
 						<Route exact path="/planner" component={Planner} />
 						<Route exact path="/dashboard" component={Dashboard} />

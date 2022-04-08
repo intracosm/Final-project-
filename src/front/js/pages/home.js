@@ -10,7 +10,7 @@ export const Home = () => {
 
 	return (
 		<div className="d-flex justify-content-center">
-			<HealthCareLogin />
+			{/* <HealthCareLogin /> */}
 			<PatientLogin />
 			<Link to="/dashboard"><button>to dashboard</button></Link>
 		</div>
