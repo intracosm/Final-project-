@@ -4,7 +4,7 @@ import { Navbar } from "../component/navbar";
 
 import { Context } from "../store/appContext";
 
-export const NutritionalFacts = (props) => {
+export const Nutritionalfacts = (props) => {
     const location = useLocation();
 
     const { store, actions } = useContext(Context);

@@ -35,12 +35,7 @@ export const Navbar = () => {
 									<span className="title">Home</span>
 								</Link>
 							</li>
-							<li className="nav-item">
-								<Link className="linnk" to="/exercises">
-									<span className="icon"><i class="fas fa-dumbbell"></i></span>
-									<span className="title">Exercises</span>
-								</Link>
-							</li>
+
 							<li className="nav-item">
 								<Link className="linnk" to="/planner">
 									<span className="icon"><i className="fas fa-calendar-check"></i></span>
