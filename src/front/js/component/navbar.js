@@ -36,9 +36,9 @@ export const Navbar = () => {
 								</Link>
 							</li>
 							<li className="nav-item">
-								<Link className="linnk" to="">
-									<span className="icon"><i className="fas fa-comment"></i></span>
-									<span className="title">Messages</span>
+								<Link className="linnk" to="/exercises">
+									<span className="icon"><i class="fas fa-dumbbell"></i></span>
+									<span className="title">Exercises</span>
 								</Link>
 							</li>
 							<li className="nav-item">

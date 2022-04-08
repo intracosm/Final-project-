@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Context } from "../store/appContext";
+import "../../styles/home.css";
 
 export const Modal = () => {
     const { store, actions } = useContext(Context);
@@ -11,7 +12,7 @@ export const Modal = () => {
     }
 
     return (
-        <div className="d-flex justify-content-center">
+        <div className="modald d-flex justify-content-center">
             {show && (
                 <div className="alert alert-success" role="alert">
                     <h4 className="alert-heading">Attention!</h4>

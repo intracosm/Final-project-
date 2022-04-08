@@ -11,9 +11,11 @@
   height: 300px;
 }
 */
-.doctor {
+.user {
   width: 200px;
   height: 400px;
+  justify-content: center;
+  padding-top: 160px;
 }
 .card-img {
   width: 100%;

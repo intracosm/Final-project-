@@ -12,7 +12,7 @@ export const Home = () => {
 		<div className="d-flex justify-content-center">
 
 			<PatientLogin />
-			<Link to="/dashboard"><button>to dashboard</button></Link>
+
 		</div>
 	);
 };
