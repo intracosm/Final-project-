@@ -21,6 +21,9 @@ ul li:hover {
   display: block;
   display: flex;
 }
+.black1 {
+  color: black;
+}
 li .icon {
   display: block;
   min-width: 60px;
@@ -47,10 +50,22 @@ ul li .title {
 .nav1 {
   margin-top: 50px;
 }
+.nav1-nutrition {
+  margin-top: 60px;
+}
+.nav1-exercises {
+  margin-top: 150px;
+}
 .long-card-div {
   margin: 0;
 }
-
+.s-bar {
+  margin-bottom: 150px;
+}
+.exercise-icon {
+  font-size: 80px;
+  margin-bottom: 50px;
+}
 .short-card-div {
   float: right;
   margin: 0;
@@ -60,8 +75,7 @@ ul li .title {
   float: left;
   margin: 0;
 }
-.card1 {
-}
+
 .dashpage {
   background-color: whitesmoke;
 }

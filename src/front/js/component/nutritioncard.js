@@ -7,28 +7,49 @@ import { Context } from "../store/appContext";
 export const Nutritioncard = (props) => {
 
     const { store, actions } = useContext(Context);
-    let nutrition = store.nutrition[getRandomInt()];
+
     const [show, setShow] = useState(true);
 
+    const [randomNum, setRandomNum] = useState(0)
+    let nutrition = store.nutrition[randomNum];
+
     function getRandomInt() {
-        return Math.floor(Math.random() * 6);
+        return Math.floor(Math.random() * 5);
     }
 
+
+    useEffect(() => {
+        setRandomNum(getRandomInt())
+    }, []);
+
+
+    console.log("nutrition", nutrition);
+    console.log("randomNum", randomNum);
     return (
-        <div className="short-card card m-3" style={{ width: "18rem" }} >
-            <h4 className="card-header">Nutritional Fact Of The Day</h4>
-            <div className="card-body">
-                {show && (
+        <div>
+            <Link className="linnk" to={{ pathname: "/nutritionalfacts/" + randomNum, state: { props } }}>
+                <div className="short-card card m-3" style={{ width: "18rem" }} >
+                    <h4 className="card-header black1">Nutritional Fact Of The Day</h4>
                     <div className="card-body">
-                        {store.nutrition.length > 0 && (
-                            <Link to={{ pathname: "/nutritionalfacts/" + props.ID, state: { props } }}>
-                                <p>
-                                    {nutrition && nutrition.sample}
-                                </p>
-                            </Link>
+                        {show && (
+                            <div className="card-body">
+                                {store.nutrition.length > 0 && (
+
+                                    <p className="black1">
+                                        {nutrition && nutrition.sample}
+                                    </p>
+                                )}
+                            </div>
                         )}
                     </div>
-                )}
-            </div>
-        </div >)
+                </div>
+            </Link>
+        </div>)
 }
+
+
+Nutritioncard.propTypes = {
+    id: PropTypes.number
+}
+
+

@@ -78,6 +78,7 @@
 		"devextreme": "21.2.6",
 		"devextreme-react": "21.2.6",
 		"prop-types": "^15.6.1",
+		"query-string": "^7.1.1",
 		"react": "^16.8.4",
 		"react-big-calendar": "^0.39.4",
 		"react-bootstrap": "^2.2.1",
