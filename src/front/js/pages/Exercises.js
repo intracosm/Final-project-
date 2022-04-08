@@ -65,7 +65,11 @@ export const Exercise = () => {
                 <Navbar />
             </div>
             <div>
-                <div className="d-flex justify-content-center"> <span><i class="fas fa-dumbbell exercise-icon"></i></span></div>
+                <div className="d-flex justify-content-center">
+                    <span>
+                        <a className="navbar-brand2" href="#"> <i class="fab fa-hackerrank exercise-icon">Life Hack</i></a>
+                    </span>
+                </div>
                 <div className="d-flex justify-content-center s-bar">
                     <input
                         type="text"
