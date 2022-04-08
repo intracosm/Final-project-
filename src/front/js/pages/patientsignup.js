@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 
+
 const PatientSignUp = () => {
     const [fullName, setFullName] = useState("");
     const [dob, setDob] = useState("");

@@ -5,3 +5,27 @@
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
 */
+
+.medcontent {
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar-brand2 {
+  font-size: x-large;
+  color: green !important;
+}
+
+.medcd {
+  transition: box-shadow 0.3s;
+  width: 50px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(11, 59, 2);
+  background: #fff;
+  float: left;
+}
+.medcd:hover {
+  box-shadow: 0 0 15px rgb(219, 29, 4);
+}

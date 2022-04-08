@@ -68,7 +68,7 @@ export const Navbar = () => {
 						</ul>
 					</div>
 				</div>
-				<a className="navbar-brand" href="#">Offcanvas navbar</a>
+				<a className="navbar-brand" href="#"> <i class="fab fa-hackerrank">Life Hack</i></a>
 
 			</div>
 		</nav>

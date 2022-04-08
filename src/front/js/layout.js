@@ -7,12 +7,17 @@ import { Home } from "./pages/home";
 import { Demo } from "./pages/demo";
 
 import injectContext from "./store/appContext";
+
 import { Dashboard } from "./pages/DashBoard";
 import { Exercise } from "./pages/Exercises";
-import { Drugs } from "./pages/drugs";
+
+
+import { Medication } from "./pages/medication";
+import { DetailedMed } from "./pages/medicationdetails";
+
 
 import { Footer } from "./component/footer";
-import { HealthCareLogin } from "./component/healthcarelogin";
+
 import { PatientLogin } from "./component/patientlogin";
 import { Nutritionalfacts } from "./pages/NutritionalFacts";
 
@@ -38,13 +43,15 @@ const Layout = () => {
 
 
 
-						<Route exact path="/healthcarelogin" component={HealthCareLogin} />
+						{/* <Route exact path="/healthcarelogin" component={HealthCareLogin} /> */}
 						<Route exact path="/patientlogin" component={PatientLogin} />
 						<Route exact path="/planner" component={Planner} />
 						<Route exact path="/dashboard" component={Dashboard} />
 						<Route exact path="/exercises" component={Exercise} />
+						<Route exact path="/detailedmed" component={DetailedMed} />
+
 						<Route exact path="/nutritionalfacts/:id" component={Nutritionalfacts} />
-						<Route exact path="/medications" component={Drugs} />
+						<Route exact path="/medications" component={Medication} />
 						<Route>
 							<h1>Not found!</h1>
 						</Route>

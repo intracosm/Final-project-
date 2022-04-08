@@ -1,19 +1,27 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useCallback } from "react";
 import { Context } from "../store/appContext";
-import { Link } from "react-router-dom";
+import { Link, useHistory, Redirect } from "react-router-dom";
 import "../../styles/home.css";
-import { Redirect } from 'react-router-dom';
+import "../../styles/medication.css";
 
-export const Drugs = () => {
+
+
+export const Medication = () => {
     const { store, actions } = useContext(Context);
     const [drug, setDrug] = useState([]);
     const [input, setInput] = useState("");
-    const cardClick = () => {
-        return (
-            <Redirect to="https://www.google.com/" />
-        )
-    }
-
+    // const cardClick = () => {
+    //     return (
+    //         console.log(cardClick()),
+    //         <Redirect to="https://www.google.com/" />
+    //     )
+    // }
+    // const handleOnClick = useCallback(
+    //     () => history.push(“/detailedmed”),                      
+    //     [history]
+    //   );
+    // }
+    // this second function would redirect the user to the med details page after clicking on the card produced, also have to work on limiting the amount of medication recieved from api
 
 
     const getDrug = (disease) => {
@@ -36,17 +44,17 @@ export const Drugs = () => {
 
 
     return (
-        <div className="">
+        <div className="medcontent">
             <h3>Example conditions to search for: Leukemia, Ischemic Stroke, Abdominal Distension, Premenstrual Syndrome, Edema, etc. </h3>
-            <input type="text" value={input} onChange={(e) => {
+            <div className="inputdiv"><input className="medsearch" type="text" value={input} onChange={(e) => {
                 setInput(e.target.value)
 
             }} />
-            <button className="btn btn-primary" onClick={() => getDrug(input)} >Search Drug</button>
+                <button className="btn btn-primary" onClick={() => getDrug(input)} >Search for medication</button></div>
             {
                 drug.length > 0 ? drug.map((item, index) => {
                     return (
-                        <div onClick={(e) => cardClick()} className="card" style={{ width: "18rem" }}>
+                        <div onClick={(e) => cardClick()} className="medcd card" style={{ width: "18rem" }}>
                             <div className="card-body">
                                 <h5 className="card-title">{item.drug}</h5>
                                 <p className="card-text">Disease: {item.disease}</p>
