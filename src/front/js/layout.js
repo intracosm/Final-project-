@@ -9,11 +9,11 @@ import { Demo } from "./pages/demo";
 import injectContext from "./store/appContext";
 import { Dashboard } from "./pages/dashboard";
 import { Exercise } from "./pages/exercises";
-import { Drugs } from "./pages/drugs";
+import { Medication } from "./pages/medication";
 import { DetailedMed } from "./pages/medicationdetails";
 
 import { Footer } from "./component/footer";
-import { HealthCareLogin } from "./component/healthcarelogin";
+
 import { PatientLogin } from "./component/patientlogin";
 import { Nutritionalfacts } from "./pages/nutritionalfacts";
 
@@ -47,7 +47,7 @@ const Layout = () => {
 						<Route exact path="/detailedmed" component={DetailedMed} />
 
 						<Route exact path="/nutritionalfacts/:id" component={Nutritionalfacts} />
-						<Route exact path="/medications" component={Drugs} />
+						<Route exact path="/medications" component={Medication} />
 						<Route>
 							<h1>Not found!</h1>
 						</Route>

@@ -1,17 +1,19 @@
 import React, { useState, useEffect, } from "react";
+import "react-tabs/style/react-tabs.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { useLocation } from "react-router-dom";
 
 
 export const DetailedMed = () => {
-	const location = useLocation();
-	console.log(location.state.medication);
+	// const location = useLocation();
+
 
 	const [medicationData, setMedicationData] = useState([]);
 
 	useEffect(() => {
-		let str = location.state.medication.medicationName;
-		let arr = str.split("(");
-		let newStr = arr[0].trim();
+		// let str = location.state.medication.medicationName;
+		// let arr = str.split("(");
+		// let newStr = arr[0].trim();
 
 		fetch(`https://api.fda.gov/drug/label.json?search=adverse_reactions:adderall`)
 			.then(function (response) {
