@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import { Navbar } from "../component/navbar";
 import { Context } from "../store/appContext";
 import "../../styles/dashboard.css"
-import { DailyMotivation } from "../component/dailymotivation";
-import { Nutritioncard } from "../component/nutritioncard";
+import { DailyMotivation } from "../component/DailyMotivation";
+import { Nutritioncard } from "../component/NutritionCard";
 
 import { Card } from "../component/card";
-import { Longcard } from "../component/longcard";
+import { Longcard } from "../component/LongCard";
 
-import { Exercisecard } from "../component/exercisecard";
+import { Exercisecard } from "../component/ExerciseCard";
 import { FunFact } from "../component/funfact";
 
 

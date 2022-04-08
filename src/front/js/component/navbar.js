@@ -48,6 +48,12 @@ export const Navbar = () => {
 								</Link>
 							</li>
 							<li className="nav-item">
+								<Link className="linnk" to="/exercises">
+									<span className="icon"><i class="fas fa-dumbbell"></i></span>
+									<span className="title">Exercises</span>
+								</Link>
+							</li>
+							<li className="nav-item">
 								<Link className="linnk" to="/medications">
 									<span className="icon"><i className="fas fa-prescription-bottle-alt"></i></span>
 									<span className="title">Medication search</span>

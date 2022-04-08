@@ -7,14 +7,14 @@ import { Home } from "./pages/home";
 import { Demo } from "./pages/demo";
 
 import injectContext from "./store/appContext";
-import { Dashboard } from "./pages/dashboard";
-import { Exercise } from "./pages/exercises";
+import { Dashboard } from "./pages/DashBoard";
+import { Exercise } from "./pages/Exercises";
 import { Drugs } from "./pages/drugs";
 
 import { Footer } from "./component/footer";
 import { HealthCareLogin } from "./component/healthcarelogin";
 import { PatientLogin } from "./component/patientlogin";
-import { Nutritionalfacts } from "./pages/nutritionalfacts";
+import { Nutritionalfacts } from "./pages/NutritionalFacts";
 
 
 //create your first component

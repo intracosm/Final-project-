@@ -15,20 +15,24 @@ export const Exercisecard = (props) => {
     }
 
     return (
-        <div className="short-card card m-3" style={{ width: "18rem" }} >
-            <h4 className="card-header">Exercise Log</h4>
-            <div className="card-body">
-                {show && (
+        <div>
+            <Link className="linnk" to="/exercises">
+                <div className="short-card card m-3" style={{ width: "18rem" }} >
+                    <h4 className="card-header black1">Exercise Log</h4>
                     <div className="card-body">
-                        {store.exercises.length > 0 && (
-                            <Link className="cardbutton" to="/exercises"><p>
-                                {exercises.name}
-                            </p></Link>
+                        {show && (
+                            <div className="card-body">
+                                {store.exercises.length > 0 && (
+                                    <p className="black1">
+                                        {exercises.name}
+                                    </p>
+                                )}
+                            </div>
                         )}
                     </div>
-                )}
-            </div>
-        </div >
+                </div >
+            </Link>
+        </div>
     )
 }
 
