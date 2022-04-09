@@ -3,6 +3,7 @@ import { Context } from "../store/appContext";
 import { Link, useHistory, Redirect } from "react-router-dom";
 import "../../styles/home.css";
 import "../../styles/medication.css";
+import { Navbar } from "../component/navbar";
 
 
 
@@ -45,6 +46,7 @@ export const Medication = () => {
 
     return (
         <div className="medcontent">
+            <Navbar />
             <h3>Example conditions to search for: Leukemia, Ischemic Stroke, Abdominal Distension, Premenstrual Syndrome, Edema, etc. </h3>
             <div className="inputdiv"><input className="medsearch" type="text" value={input} onChange={(e) => {
                 setInput(e.target.value)

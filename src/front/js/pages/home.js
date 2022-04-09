@@ -9,10 +9,10 @@ export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className="d-flex justify-content-center">
+		<div className="homeb d-flex justify-content-center">
 
 			<PatientLogin />
-			<Link to="/dashboard"><button>to dashboard</button></Link>
+
 		</div>
 	);
 };
