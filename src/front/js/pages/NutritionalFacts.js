@@ -20,7 +20,7 @@ export const Nutritionalfacts = (props) => {
     console.log("nutr", nutrition[props.match.params.id]);
     console.log("name", nutrition.name);
     return (
-        <div>
+        <div className="dashpage">
             <div className="nav1-nutrition">
                 <Navbar />
             </div>
@@ -28,15 +28,15 @@ export const Nutritionalfacts = (props) => {
                 <div className="card mb-3" style={{ maxWidth: "65%" }}>
                     <div className="row g-0">
                         <div className="col-md-4">
-                            <img src="..." className="img-fluid rounded-start" alt="..."></img>
                         </div>
-                        <div className="col-md-8">
-                            <div className="card-body">
-                                <h5 className="card-title">{nutrition.name}</h5>
-                                <p className="card-text">{nutrition.body}</p>
-                                <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
+
+                        <div className="card-body">
+                            <h2 className="card-title">{nutrition.name}</h2>
+                            <p className="card-text body-line"><img src={nutrition.url} style={{ width: "25rem" }} className="img-fluid rounded-start url-pic" alt="..."></img>
+                                {nutrition.body}</p>
+                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                         </div>
+
                     </div>
                 </div>
             </div>

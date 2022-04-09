@@ -17,7 +17,7 @@ export const DailyMotivation = (props) => {
 
     return (
         <div className="short-card card m-3" style={{ width: "18rem" }}>
-            <h4 className="card-header">Daily Motivation</h4>
+            <h4 className="card-header bg-success white1">Daily Motivation</h4>
             {show && (
                 <div className="card-body">
                     <h5 className="card-title"></h5>

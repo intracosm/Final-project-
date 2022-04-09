@@ -60,11 +60,11 @@ export const Exercise = () => {
 
 
     return (
-        <div>
-            <div className="nav1-exercises">
+        <div className="dashpage">
+            <div className="nav1-exercises dashpage">
                 <Navbar />
             </div>
-            <div>
+            <div className="">
                 <div className="d-flex justify-content-center">
                     <span>
                         <a className="navbar-brand2" href="#"> <i class="fab fa-hackerrank exercise-icon">Life Hack</i></a>
@@ -81,18 +81,21 @@ export const Exercise = () => {
                                 searchHash(input)
                             }
                         }} />
-                    <button type="button" class="btn btn-primary" onClick={() => searchHash(input)}>Search</button>
+                    <button type="button" class="btn btn-success" onClick={() => searchHash(input)}>Search</button>
                 </div>
             </div>
 
             <div className="row">
                 {exercises.map((item, index) => {
+                    console.log(item);
                     return (
                         <div className="col-md-4 d-flex justify-content-center" key={index}>
-                            <div className="card1 card m-3" style={{ width: "18rem" }}>
-                                <h5 className="card-header">{item.name}</h5>
+                            <div className="card1 card m-3 ex-shadow" style={{ width: "18rem" }}>
+                                <h5 className="card-header bg-success white1">{item.name}</h5>
                                 <div className="card-body">
-                                    <button type="button" class="btn btn-primary">Click to View Exercise</button>
+                                    <Link to={{ pathname: "/single-exercise/" + item.id }}>
+                                        <button type="button" class="btn btn-primary">Click to View Exercise</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

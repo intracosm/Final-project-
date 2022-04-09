@@ -8,7 +8,7 @@ export const Longcard = () => {
 
     return (
         <div className="bigDiv long-card card mt-2" style={{ width: "40rem", Maxheight: "80%" }}>
-            <h5 className="card-header">Upcoming Appointments</h5>
+            <h5 className="card-header bg-success white1">Upcoming Appointments</h5>
             <div className="card-body">
                 <h5 className="card-title">Appointment text</h5>
                 <p className="card-text">Date and time</p>
@@ -19,7 +19,7 @@ export const Longcard = () => {
                 <p className="card-text">Date and time</p>
             </div>
             <Link to="/planner">
-                <button className=" editBtn btn btn-success">Edit appointments</button>
+                <button className=" editBtn btn btn-primary">Edit appointments</button>
             </Link>
         </div>
     )

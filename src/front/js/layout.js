@@ -10,6 +10,7 @@ import injectContext from "./store/appContext";
 
 import { Dashboard } from "./pages/DashBoard";
 import { Exercise } from "./pages/Exercises";
+import { SingleExercise } from "./pages/SingleExercise";
 
 
 import { Medication } from "./pages/medication";
@@ -49,6 +50,8 @@ const Layout = () => {
 						<Route exact path="/dashboard" component={Dashboard} />
 						<Route exact path="/exercises" component={Exercise} />
 						<Route exact path="/detailedmed" component={DetailedMed} />
+						<Route exact path="/single-exercise/:id" component={SingleExercise} />
+
 
 						<Route exact path="/nutritionalfacts/:id" component={Nutritionalfacts} />
 						<Route exact path="/medications" component={Medication} />

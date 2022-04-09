@@ -12,20 +12,20 @@ export const Navbar = () => {
 
 	return (
 
-		<nav className="navbar navbar-dark bg-primary spacing fixed-top">
+		<nav className="navbar navbar-dark bg-success spacing fixed-top">
 			<div className="container-fluid">
 				<button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span className="navbar-toggler-icon"></span>
 				</button>
-				<div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div className="offcanvas offcanvas-start bg-success" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 					<div className="d-flex justify-content-between">
 						<div className="d-flex"><img className="image" src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"></img>
-							<h4 className="username">UserName</h4>
+							<h4 className="username white1">UserName</h4>
 						</div>
 						<div><button type="button" className="btn-close text-reset float-right me-1" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
 					</div>
 					<div className="m-0">
-						<h5 className="dash-word">Dashboard</h5>
+						<h5 className="dash-word white1">Dashboard</h5>
 					</div>
 					<div className="div-border offcanvas-body">
 						<ul className=" navbar-nav justify-content-end flex-grow-1 pe-3">
