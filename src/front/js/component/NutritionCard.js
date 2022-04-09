@@ -28,8 +28,8 @@ export const Nutritioncard = (props) => {
     return (
         <div>
             <Link className="linnk" to={{ pathname: "/nutritionalfacts/" + randomNum, state: { props } }}>
-                <div className="short-card card m-3" style={{ width: "18rem" }} >
-                    <h4 className="card-header bg-success white1">Nutritional Fact Of The Day</h4>
+                <div className="short-card card m-3 card-border dash-card" style={{ width: "18rem" }} >
+                    <h4 className="card-header">Nutritional Fact Of The Day</h4>
                     <div className="card-body">
                         {show && (
                             <div className="card-body">

@@ -60,23 +60,22 @@ export const Exercise = () => {
 
 
     return (
-<<<<<<< HEAD
         <div className="dashpage">
-            <div className="nav1-exercises dashpage">
-=======
-        <div className="excercisepg">
-            <div className="nav1-exercises">
->>>>>>> da019b7e755bfd91d928f7343bf22175b6902988
-                <Navbar />
-            </div>
-            <div className="">
+
+            <Navbar />
+
+            <div className="m-auto search-bar search-border">
                 <div className="d-flex justify-content-center">
                     <span>
-                        <a className="navbar-brand2" href="#"> <i class="fab fa-hackerrank exercise-icon">Life Hack</i></a>
+                        <a className="navbar-brand2 " href="#"> <i class="fab fa-hackerrank exercise-icon"></i></a>
                     </span>
+                </div>
+                <div className="d-flex justify-content-center mb-3">
+                    <h2>Let's Get Pumped!</h2>
                 </div>
                 <div className="d-flex justify-content-center s-bar">
                     <input
+                        className="form-control"
                         type="text"
                         placeholder="Search Exercise Name"
                         value={input}
@@ -86,7 +85,10 @@ export const Exercise = () => {
                                 searchHash(input)
                             }
                         }} />
-                    <button type="button" class="btn btn-success" onClick={() => searchHash(input)}>Search</button>
+
+
+
+                    <button id="search-icon" type="button" class="btn btn-header" onClick={() => searchHash(input)}><i className="fas fa-search"></i></button>
                 </div>
             </div>
 
@@ -95,11 +97,12 @@ export const Exercise = () => {
                     console.log(item);
                     return (
                         <div className="col-md-4 d-flex justify-content-center" key={index}>
-                            <div className="card1 card m-3 ex-shadow" style={{ width: "18rem" }}>
-                                <h5 className="card-header bg-success white1">{item.name}</h5>
+                            <div className="card1 card m-3 search-border exercise-card" style={{ width: "23rem" }}>
+                                <h5 className="card-header d-flex justify-content-center">{item.name}</h5>
+                                <img src={item.gifUrl}></img>
                                 <div className="card-body">
-                                    <Link to={{ pathname: "/single-exercise/" + item.id }}>
-                                        <button type="button" class="btn btn-primary">Click to View Exercise</button>
+                                    <Link className="d-flex justify-content-center" to={{ pathname: "/single-exercise/" + item.id }}>
+                                        <button type="button" class="btn btn-primary">View Exercise</button>
                                     </Link>
                                 </div>
                             </div>
@@ -110,3 +113,29 @@ export const Exercise = () => {
         </div>
     )
 };
+
+{/* <div className="form-group">
+              <input
+                type="text"
+                className="form-control bg-transparent"
+                id="exampleFormControlInput1"
+                placeholder="Search for noms"
+                value={searchQuery}
+                onChange={(e) =>
+                  setSearchQuery(e.target.value) && getProducts(e.target.value)
+                }
+              />
+            </div>
+            <button
+              className="btn btn-header"
+              onClick={async (e) => {
+                e.preventDefault();
+                await actions.getMeals(
+                  `https://api.spoonacular.com/recipes/complexSearch?query=${searchQuery}&maxReadyTime=30&addRecipeInformation=true&ignorePantry=true&instructionsRequired=true&fillIngredients=true&addRecipeNutrition=true&apiKey=abb3fdf4028b4f0d989e7ee0b2b23b67&number=100`,
+                  searchQuery
+                );
+                history.push(`/meals/browse/${searchQuery}`);
+              }}
+            >
+              <i className="fas fa-search"></i>
+            </button> */}
