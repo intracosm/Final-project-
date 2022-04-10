@@ -67,7 +67,7 @@ export const Exercise = () => {
             <div className="m-auto search-bar search-border">
                 <div className="d-flex justify-content-center">
                     <span>
-                        <a className="navbar-brand2 " href="#"> <i class="fab fa-hackerrank exercise-icon"></i></a>
+                        <a className="navbar-brand2 " href="#"> <i className="fab fa-hackerrank exercise-icon"></i></a>
                     </span>
                 </div>
                 <div className="d-flex justify-content-center mb-3">
@@ -88,21 +88,20 @@ export const Exercise = () => {
 
 
 
-                    <button id="search-icon" type="button" class="btn btn-header" onClick={() => searchHash(input)}><i className="fas fa-search"></i></button>
+                    <button id="search-icon" type="button" className="btn btn-header" onClick={() => searchHash(input)}><i className="fas fa-search"></i></button>
                 </div>
             </div>
 
             <div className="row">
                 {exercises.map((item, index) => {
-                    console.log(item);
                     return (
-                        <div className="col-md-4 d-flex justify-content-center" key={index}>
+                        <div className="col-md-4 d-flex justify-content-center" index={index} key={index}>
                             <div className="card1 card m-3 search-border exercise-card" style={{ width: "23rem" }}>
                                 <h5 className="card-header d-flex justify-content-center">{item.name}</h5>
                                 <img src={item.gifUrl}></img>
                                 <div className="card-body">
-                                    <Link className="d-flex justify-content-center" to={{ pathname: "/single-exercise/" + item.id }}>
-                                        <button type="button" class="btn btn-primary">View Exercise</button>
+                                    <Link className="d-flex justify-content-center" to={`/single-exercise/${item.index}`}>
+                                        <button type="button" className="btn btn-primary">View Exercise</button>
                                     </Link>
                                 </div>
                             </div>

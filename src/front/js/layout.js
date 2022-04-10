@@ -50,7 +50,7 @@ const Layout = () => {
 						<Route exact path="/dashboard" component={Dashboard} />
 						<Route exact path="/exercises" component={Exercise} />
 						<Route exact path="/detailedmed" component={DetailedMed} />
-						<Route exact path="/single-exercise/:id" component={SingleExercise} />
+						<Route exact path="/single-exercise/:index" component={SingleExercise} />
 
 
 						<Route exact path="/nutritionalfacts/:id" component={Nutritionalfacts} />
