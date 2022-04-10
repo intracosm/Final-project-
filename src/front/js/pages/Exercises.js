@@ -60,13 +60,8 @@ export const Exercise = () => {
 
 
     return (
-<<<<<<< HEAD
         <div className="dashpage">
             <div className="nav1-exercises dashpage">
-=======
-        <div className="excercisepg">
-            <div className="nav1-exercises">
->>>>>>> da019b7e755bfd91d928f7343bf22175b6902988
                 <Navbar />
             </div>
             <div className="">
