@@ -19,8 +19,8 @@ export const PatientLogin = () => {
         <div className="user col-sm-6">
             <div className="d-flex flex-column justify-content-center">
                 <h1 className="pt-login text-center">Patient login</h1>
-                <input placeholder="username" onChange={(e) => setUsername(e.target.value)} type="text"></input>
-                <input placeholder="password" onChange={(e) => setPassword(e.target.value)} type="text"></input>
+                Username: <input onChange={(e) => setUsername(e.target.value)} type="text"></input>
+                Password: <input type="password" onChange={(e) => setPassword(e.target.value)} />
                 <Link to="/dashboard">
                     <button className="pt-login-btn btn btn-primary">login</button>
                 </Link>

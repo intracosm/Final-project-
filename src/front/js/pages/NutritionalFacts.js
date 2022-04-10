@@ -21,11 +21,11 @@ export const Nutritionalfacts = (props) => {
     console.log("name", nutrition.name);
     return (
         <div className="dashpage">
-            <div className="nav1-nutrition">
-                <Navbar />
-            </div>
+
+            <Navbar />
+
             <div className="d-flex justify-content-center mt-5">
-                <div className="card mb-3" style={{ maxWidth: "65%" }}>
+                <div className="card mb-3 nutritional-border" style={{ maxWidth: "65%" }}>
                     <div className="row g-0">
                         <div className="col-md-4">
                         </div>

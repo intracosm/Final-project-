@@ -10,14 +10,13 @@
   width: 100%;
   height: 600px;
   justify-content: center;
-  margin-top: 70px;
   text-align: center;
   background-image: url(https://thumbs.dreamstime.com/b/senior-doctor-holding-papers-smiling-23096004.jpg);
 }
 
 .navbar-brand2 {
   font-size: x-large;
-  color: green !important;
+  color: red !important;
 }
 
 .medcd {

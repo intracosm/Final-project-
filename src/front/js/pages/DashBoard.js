@@ -20,9 +20,9 @@ export const Dashboard = () => {
     return (
         <div className="container-fluid">
 
-            <div className="nav1">
-                <Navbar />
-            </div>
+
+            <Navbar />
+
             <div className="dashpage d-flex justify-content-between">
                 <div className="card1-div">
                     <Card />
@@ -36,9 +36,10 @@ export const Dashboard = () => {
                 </div>
                 <div className="short-card-div">
                     <Nutritioncard />
+                    <Exercisecard />
                     <DailyMotivation />
 
-                    <Exercisecard />
+
 
                     <FunFact />
                 </div>
