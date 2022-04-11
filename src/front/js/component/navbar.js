@@ -104,18 +104,6 @@ export const Navbar = () => {
 								Sign In
 							</NavLink>
 						</li>
-						<li className="nav-item dropdown">
-							<a className="nav-link dropdown-toggle favs" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Favorite Exercises
-							</a>
-							<ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-								{store.favorites.map((fav, index) => {
-									return (<li key={index}><a className="dropdown-item" href="#">{fav}</a></li>
-									)
-								})}
-							</ul>
-						</li>
-
 					</ul>
 
 				</div>
