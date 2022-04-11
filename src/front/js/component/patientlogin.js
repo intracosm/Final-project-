@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
-import Form from "react-bootstrap/Form";
 import { Context } from "../store/appContext";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import "../../styles/patientlogin.css"
+import "../../styles/style.css"
 
 // remake this component without using bootstrap react 
 
@@ -16,14 +14,26 @@ export const PatientLogin = () => {
 
     return (
 
-        <div className="user col-sm-6">
-            <div className="d-flex flex-column justify-content-center">
-                <h1 className="pt-login text-center">Patient login</h1>
-                Username: <input onChange={(e) => setUsername(e.target.value)} type="text"></input>
-                Password: <input type="password" onChange={(e) => setPassword(e.target.value)} />
+        <div className="user login-wrapper col-sm-6">
+
+            <div className="form d-flex flex-column justify-content-center">
+
+                <img src="https://thumbs.dreamstime.com/b/senior-man-winning-computer-game-16618154.jpg" alt=""></img>
+
+                <h2 className="pt-login text-center">Login</h2>
+
+                <div className="input-group d-flex flex-column"  >
+                    User Name <input id="loginUser" onChange={(e) => setUsername(e.target.value)} type="text"></input>
+                </div>
+
+                <div className="input-group d-flex flex-column">
+                    Password <input type="password" id="loginPassword" onChange={(e) => setPassword(e.target.value)} />
+                </div>
+
                 <Link to="/dashboard">
                     <button className="pt-login-btn btn btn-primary">login</button>
                 </Link>
+
             </div>
         </div>
 
