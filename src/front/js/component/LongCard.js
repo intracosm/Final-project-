@@ -19,7 +19,7 @@ export const Longcard = () => {
                 <p className="card-text">Date and time</p>
             </div>
             <Link to="/planner">
-                <button className=" editBtn btn btn-primary">Edit appointments</button>
+                <button className=" editBtn btn btn-primary d-flex justify-content-between">Edit appointments</button>
             </Link>
         </div>
     )

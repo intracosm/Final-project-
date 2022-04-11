@@ -18,7 +18,7 @@ export const Exercisecard = (props) => {
         <div>
             <Link className="linnk" to="/exercises">
                 <div className="short-card card m-3 card-border dash-card" style={{ width: "18rem" }} >
-                    <h4 className="card-header">Exercise Log</h4>
+                    <h4 className="black1 card-header">Exercise Log</h4>
                     <div className="card-body">
                         {show && (
                             <div className="card-body">

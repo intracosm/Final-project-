@@ -94,13 +94,14 @@ export const Exercise = () => {
 
             <div className="row">
                 {exercises.map((item, index) => {
+
                     return (
                         <div className="col-md-4 d-flex justify-content-center" index={index} key={index}>
                             <div className="card1 card m-3 search-border exercise-card" style={{ width: "23rem" }}>
                                 <h5 className="card-header d-flex justify-content-center">{item.name}</h5>
                                 <img src={item.gifUrl}></img>
                                 <div className="card-body">
-                                    <Link className="d-flex justify-content-center" to={`/single-exercise/${item.index}`}>
+                                    <Link className="d-flex justify-content-center" to={`/single-exercise/${item.id}`}>
                                         <button type="button" className="btn btn-primary">View Exercise</button>
                                     </Link>
                                 </div>
@@ -112,6 +113,11 @@ export const Exercise = () => {
         </div>
     )
 };
+
+
+// {{pathname: "", state: item}} another way to pass to another page
+// location.state.id "on the other page to call in a variable"
+
 
 {/* <div className="form-group">
               <input

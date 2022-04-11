@@ -31,8 +31,8 @@ export const Nutritionalfacts = (props) => {
                         </div>
 
                         <div className="card-body">
-                            <h2 className="card-title">{nutrition.name}</h2>
-                            <p className="card-text body-line"><img src={nutrition.url} style={{ width: "25rem" }} className="img-fluid rounded-start url-pic" alt="..."></img>
+                            <h1 className="card-title">{nutrition.name}</h1>
+                            <p className="card-text body-line"><img src={nutrition.url} style={{ width: "25rem" }} className="img-fluid rounded-start url-pic image-nutrition" alt="..."></img>
                                 {nutrition.body}</p>
                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                         </div>
