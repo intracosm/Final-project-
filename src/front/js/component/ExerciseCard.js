@@ -14,9 +14,19 @@ export const Exercisecard = (props) => {
         return Math.floor(Math.random() * 1327);
     }
 
+
+    const reload = () => {
+        return window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+    }
+
+
+
+
     return (
         <div>
-            <Link className="linnk" to="/exercises">
+            <Link onClick={() => reload()} className="linnk" to="/exercises">
                 <div className="short-card card m-3 card-border dash-card" style={{ width: "18rem" }} >
                     <h4 className="black1 card-header">Weekly Exercise Log</h4>
                     <div className="card-body">

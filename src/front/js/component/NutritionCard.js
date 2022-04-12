@@ -20,6 +20,7 @@ export const Nutritioncard = (props) => {
     // setRandomNum(getRandomInt())
 
 
+
     return (
         <div>
             <Link className="linnk" to={{ pathname: "/nutritionalfacts/" + store.factoftheday.id, state: { props } }}>
