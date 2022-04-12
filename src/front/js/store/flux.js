@@ -1,6 +1,8 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			favorites: [],
+			factoftheday: {},
 			exercises: [],
 			quotes: [],
 			nutrition: [
@@ -148,9 +150,30 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then(response => response.json())
 					.then(response => setStore({ exercises: response }))
 					.catch(err => console.error(err));
-			}
-		},
+			},
+			getFact: () => {
+				let fact = getStore().nutrition[Math.floor(Math.random() * 5)]
+				setStore({ factoftheday: fact })
+			},
+			getFav: (favName) => {
+
+				let newFavorites = getStore().favorites;
+
+				let found = newFavorites.find(item => item == favName);
+
+				if (found) {
+					newFavorites = newFavorites.filter((item) => item != favName)
+				}
+				else {
+					newFavorites = [...newFavorites, favName]
+				}
+				setStore({ favorites: newFavorites });
+			},
+		}
 	};
 };
 
 export default getState;
+
+
+// getFact only runs once because it is put inside of the app context useEffect that only runs once when the whole application is loaded. also the item is placed in fact of the day so it only loads that specific object.

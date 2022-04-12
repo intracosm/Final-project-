@@ -18,9 +18,16 @@ export const Exercisecard = (props) => {
         <div>
             <Link className="linnk" to="/exercises">
                 <div className="short-card card m-3 card-border dash-card" style={{ width: "18rem" }} >
-                    <h4 className="card-header">Exercise Log</h4>
+                    <h4 className="black1 card-header">Weekly Exercise Log</h4>
                     <div className="card-body">
-                        {show && (
+                        <p className="black1">Lets Start This Week Off Strong 💪</p>
+                        <ul>
+                            {store.favorites.map((fav, index) => {
+                                return (<li className="black1" key={index}>{fav}</li>
+                                )
+                            })}
+                        </ul>
+                        {/* {show && (
                             <div className="card-body">
                                 {store.exercises.length > 0 && (
                                     <p className="black1">
@@ -28,7 +35,7 @@ export const Exercisecard = (props) => {
                                     </p>
                                 )}
                             </div>
-                        )}
+                        )} */}
                     </div>
                 </div >
             </Link>

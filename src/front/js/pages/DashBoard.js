@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import { Navbar } from "../component/navbar";
+import { Nav2 } from "../component/nav2";
 import { Context } from "../store/appContext";
 import "../../styles/dashboard.css"
 import { DailyMotivation } from "../component/DailyMotivation";
 import { Nutritioncard } from "../component/NutritionCard";
+import { Modal2 } from "../component/Modal2";
 
 import { Card } from "../component/card";
 import { Longcard } from "../component/LongCard";
@@ -17,11 +18,15 @@ import { FunFact } from "../component/funfact";
 export const Dashboard = () => {
     const { store, actions } = useContext(Context);
 
+    const [state, setState] = useState({
+        showModal: true,
+    });
+
     return (
         <div className="container-fluid">
 
 
-            <Navbar />
+            <Nav2 />
 
             <div className="dashpage d-flex justify-content-between">
                 <div className="card1-div">
@@ -35,6 +40,10 @@ export const Dashboard = () => {
                     <Longcard />
                 </div>
                 <div className="short-card-div">
+                    <Modal2
+                        show={state.showModal}
+                        onClose={() => setState({ showModal: false })}
+                    />
                     <Nutritioncard />
                     <Exercisecard />
                     <DailyMotivation />

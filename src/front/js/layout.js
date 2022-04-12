@@ -3,8 +3,10 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 import { Planner } from "./component/planner";
 
-import { Home } from "./pages/home";
+
+import { PatientLog } from "./pages/PatientLoginPage";
 import { Demo } from "./pages/demo";
+import { LandingPage } from "./pages/landingpage";
 
 import injectContext from "./store/appContext";
 
@@ -19,7 +21,7 @@ import { DetailedMed } from "./pages/medicationdetails";
 
 import { Footer } from "./component/footer";
 
-import { PatientLogin } from "./component/patientlogin";
+
 import { Nutritionalfacts } from "./pages/NutritionalFacts";
 
 
@@ -34,23 +36,22 @@ const Layout = () => {
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
 					<Switch>
-						<Route exact path="/">
-							<Home />
-						</Route>
+						<Route exact path="/" component={LandingPage} />
+
+
 						<Route exact path="/demo">
 							<Demo />
 						</Route>
 
 
-
-
 						{/* <Route exact path="/healthcarelogin" component={HealthCareLogin} /> */}
-						<Route exact path="/patientlogin" component={PatientLogin} />
+						<Route exact path="/patientlogin" component={PatientLog} />
 						<Route exact path="/planner" component={Planner} />
 						<Route exact path="/dashboard" component={Dashboard} />
 						<Route exact path="/exercises" component={Exercise} />
 						<Route exact path="/detailedmed" component={DetailedMed} />
-						<Route exact path="/single-exercise/:index" component={SingleExercise} />
+						<Route exact path="/single-exercise/:id" component={SingleExercise} />
+
 
 
 						<Route exact path="/nutritionalfacts/:id" component={Nutritionalfacts} />

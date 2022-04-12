@@ -10,32 +10,28 @@ export const Nutritioncard = (props) => {
 
     const [show, setShow] = useState(true);
 
-    const [randomNum, setRandomNum] = useState(0)
-    let nutrition = store.nutrition[randomNum];
+    // const [randomNum, setRandomNum] = useState(0)
+    // let nutrition = store.nutrition[randomNum];
 
-    function getRandomInt() {
-        return Math.floor(Math.random() * 5);
-    }
+    // function getRandomInt() {
+    //     return Math.floor(Math.random() * 5);
+    // }
 
-
-    useEffect(() => {
-        setRandomNum(getRandomInt())
-    }, []);
-
+    // setRandomNum(getRandomInt())
 
 
     return (
         <div>
-            <Link className="linnk" to={{ pathname: "/nutritionalfacts/" + randomNum, state: { props } }}>
+            <Link className="linnk" to={{ pathname: "/nutritionalfacts/" + store.factoftheday.id, state: { props } }}>
                 <div className="short-card card m-3 card-border dash-card" style={{ width: "18rem" }} >
-                    <h4 className="card-header">Nutritional Fact Of The Day</h4>
+                    <h4 className="black1 card-header">Nutritional Fact Of The Day</h4>
                     <div className="card-body">
                         {show && (
                             <div className="card-body">
                                 {store.nutrition.length > 0 && (
 
                                     <p className="black1">
-                                        {nutrition && nutrition.sample}
+                                        {store.factoftheday && store.factoftheday.sample}
                                     </p>
                                 )}
                             </div>

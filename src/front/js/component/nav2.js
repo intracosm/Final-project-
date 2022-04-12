@@ -6,7 +6,7 @@ import { Context } from "../store/appContext";
 
 import "../../styles/dashboard.css"
 
-export const Navbar = () => {
+export const Nav2 = () => {
 
 	const { store, actions } = useContext(Context);
 
@@ -19,7 +19,7 @@ export const Navbar = () => {
 		<nav className="navbar navbar-expand-lg navbar-light bg-light nav-border">
 			<div className="container-fluid">
 				<div className="logo-container">
-					<a className="navbar-brand" href="https://3000-intracosm-finalproject-cctck6uj75b.ws-us39a.gitpod.io/"> <i className="fab fa-hackerrank red1 life-hack">Life<span className="black1">Hack</span></i></a>
+					<a className="navbar-brand" href="#"> <i className="fab fa-hackerrank red1 life-hack">Life<span className="black1">Hack</span></i></a>
 				</div>
 				<button
 
@@ -52,7 +52,7 @@ export const Navbar = () => {
 						<li className="nav-item">
 							<NavLink
 								id="black1"
-								to="/patientlogin"
+								to="/planner"
 								className={(isActive) => {
 									return `nav-link ${isActive ? "active" : ""}`;
 								}}
@@ -63,7 +63,7 @@ export const Navbar = () => {
 						<li className="nav-item">
 							<NavLink
 								id="black1"
-								to="/patientlogin"
+								to="/exercises"
 								className={(isActive) => {
 									return `nav-link ${isActive ? "active" : ""}`;
 								}}
@@ -74,7 +74,7 @@ export const Navbar = () => {
 						<li className="nav-item">
 							<NavLink
 								id="black1"
-								to="/patientlogin"
+								to="/medications"
 								className={(isActive) => {
 									return `nav-link ${isActive ? "active" : ""}`;
 								}}
@@ -85,7 +85,7 @@ export const Navbar = () => {
 						<li className="nav-item">
 							<NavLink
 								id="red1"
-								to="/patientlogin"
+								to="/dashboard"
 								className={(isActive) => {
 									return `nav-link ${isActive ? "active" : ""}`;
 								}}
@@ -101,7 +101,7 @@ export const Navbar = () => {
 									return `nav-link ${isActive ? "active" : ""}`;
 								}}
 							>
-								Sign In
+								Sign Out
 							</NavLink>
 						</li>
 					</ul>
