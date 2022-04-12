@@ -1,7 +1,7 @@
 import { Button } from "bootstrap";
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import { Navbar } from "../component/navbar";
+import { Nav2 } from "../component/nav2";
 import "../../styles/dashboard.css"
 
 import queryString from "query-string";
@@ -62,7 +62,8 @@ export const Exercise = () => {
     return (
         <div className="dashpage">
 
-            <Navbar />
+
+            <Nav2 />
 
             <div className="m-auto search-bar search-border">
                 <div className="d-flex justify-content-center">

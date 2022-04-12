@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
-import { Navbar } from "../component/navbar";
+import { Nav2 } from "../component/nav2";
 import { Context } from "../store/appContext";
 
 export const SingleExercise = () => {
@@ -28,7 +28,7 @@ export const SingleExercise = () => {
 
     return (
         <div className="dashpage">
-            <Navbar />
+            <Nav2 />
             <div className="d-flex justify-content-center mt-5">
                 <div className="single-exercise card mb-3" style={{ maxWidth: "65%" }}>
                     <div className="row g-0">

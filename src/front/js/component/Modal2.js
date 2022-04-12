@@ -37,7 +37,7 @@ export const Modal2 = (props) => {
                         )}
                     </div>
                     <div className="modal-footer">
-                        <Link className="linnk" to={{ pathname: "/nutritionalfacts/" + store.factoftheday.id, state: { props } }}>
+                        <Link className="linnk" to={{ pathname: "/nutritionalfacts/" + store.factoftheday.id }}>
                             <button type="button" className="btn btn-primary">
                                 Read More!
                             </button>

@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import Scheduler from 'devextreme-react/scheduler';
 import { Context } from "../store/appContext";
 import { Modal } from "./modal.js";
-import { Navbar } from './navbar';
+import { Nav2 } from './nav2';
 const currentDate = new Date(2022, 3, 21);
 const views = ['day', 'week', 'workWeek', 'month'];
 
@@ -10,7 +10,7 @@ const views = ['day', 'week', 'workWeek', 'month'];
 export const Planner = () => {
     const { store, actions } = useContext(Context);
     return (<div>
-        <Navbar />
+        <Nav2 />
         <Modal />
 
 

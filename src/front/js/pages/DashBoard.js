@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import { Navbar } from "../component/navbar";
+import { Nav2 } from "../component/nav2";
 import { Context } from "../store/appContext";
 import "../../styles/dashboard.css"
 import { DailyMotivation } from "../component/DailyMotivation";
@@ -26,7 +26,7 @@ export const Dashboard = () => {
         <div className="container-fluid">
 
 
-            <Navbar />
+            <Nav2 />
 
             <div className="dashpage d-flex justify-content-between">
                 <div className="card1-div">

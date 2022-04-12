@@ -4,14 +4,17 @@ import { Context } from "../store/appContext";
 import { PatientLogin } from "../component/patientlogin.js"
 import { Link } from "react-router-dom";
 import "../../styles/home.css";
+import { Navbar } from "../component/navbar";
 
-export const Home = () => {
+export const PatientLog = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className="homeb d-flex justify-content-center">
-
-			<PatientLogin />
+		<div className="">
+			<Navbar />
+			<div className="homeb d-flex justify-content-center">
+				<PatientLogin />
+			</div>
 
 		</div>
 	);

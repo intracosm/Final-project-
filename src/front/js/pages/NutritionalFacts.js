@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
-import { Navbar } from "../component/navbar";
+import { Nav2 } from "../component/nav2";
 
 import { Context } from "../store/appContext";
 
@@ -22,7 +22,7 @@ export const Nutritionalfacts = (props) => {
     return (
         <div className="dashpage">
 
-            <Navbar />
+            <Nav2 />
 
             <div className="d-flex justify-content-center mt-5">
                 <div className="card mb-3 nutritional-border" style={{ maxWidth: "65%" }}>
