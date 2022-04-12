@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Merriweather sans", sans-serif;
 }
 .login-wrapper {
   height: 80vh;
