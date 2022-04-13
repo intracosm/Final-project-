@@ -1,3 +1,11 @@
+body {
+  /* font-family: "Merriweather", serif; */
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+navbar {
+  width: 100%;
+}
 span {
   padding-left: 3px;
   padding-right: 5px;
@@ -5,10 +13,11 @@ span {
 h2 {
   padding-left: 3px;
 }
-.container-fluid {
-  width: 100%;
+.top-div {
+  width: 80%;
   margin: 0;
   padding: 0;
+  float: right;
 }
 #black1:hover {
   color: rgb(183, 1, 1);
@@ -52,6 +61,7 @@ li .icon {
   line-height: 60px;
   text-align: center;
 }
+
 li .icon .fas {
   color: black;
   font-size: 24px;
@@ -91,7 +101,7 @@ ul li .title {
   line-height: 30px;
 }
 .long-card-div {
-  margin: 0;
+  margin-bottom: 30px;
 }
 .s-bar {
   margin-bottom: 150px;
@@ -141,6 +151,8 @@ ul li .title {
 .exercise-card:hover {
   transition: 0.9s;
   transform: scale(1.1);
+  box-shadow: 0 0 5px #ffffff, 0 0 10px rgb(255, 255, 255),
+    0 0 5px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
 }
 .dash-card:hover {
   transition: 0.1s;
@@ -165,14 +177,22 @@ ul li .title {
     rgba(0, 0, 0, 0.09) 3px 16px 8px, rgba(0, 0, 0, 0.09) 4px 3px 32px 16px;
 }
 .card-border {
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  border: 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.09) 10px 2px 10px,
+    rgba(0, 0, 0, 0.09) 2px 5px 32px 10px, rgba(0, 0, 0, 0.09) 3px 3px 8px 4px,
+    rgba(0, 0, 0, 0.09) 3px 16px 8px, rgba(0, 0, 0, 0.09) 4px 3px 32px 16px;
+  border: 1px solid black;
   border-top-left-radius: 20px !important;
   border-bottom-left-radius: 20px !important;
   border-top-right-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
+}
+.card-border:hover {
+  box-shadow: 0 0 5px #ff0000, 0 0 5px rgb(255, 0, 0), 0 0 4px rgb(255, 0, 0),
+    0 0 10px rgb(255, 0, 0);
+}
+.card-border-exercises:hover {
+  box-shadow: 0 0 5px #ff0000, 0 0 5px rgb(255, 0, 0), 0 0 4px rgb(255, 0, 0),
+    0 0 10px rgb(255, 0, 0);
 }
 .nutritional-border {
   box-shadow: rgba(0, 0, 0, 0.09) 10px 2px 10px,
@@ -209,7 +229,8 @@ ul li .title {
 }
 
 .dashpage {
-  background-color: rgb(142, 142, 142);
+  background-color: white;
+  width: 100%;
 }
 
 .image {
@@ -243,4 +264,216 @@ ul li .title {
 
 .bigDiv {
   justify-content: center;
+}
+.white-icon {
+  color: white;
+  font-size: 20px;
+}
+.span-icon {
+  background-color: rgba(255, 0, 0, 0.671);
+  border-radius: 100%;
+
+  padding: 10px;
+  float: left;
+}
+
+.nutri-icon {
+  color: white;
+  font-size: 20px;
+}
+.nutri-span {
+  background-color: rgba(1, 209, 1, 0.671);
+  padding: 10px;
+  float: left;
+
+  border-radius: 100%;
+}
+.modal-span {
+  background-color: rgba(1, 209, 1, 0.671);
+  padding: 10px;
+  float: left;
+
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.moti-span {
+  background-color: rgba(96, 223, 255, 0.671);
+  padding: 10px;
+  float: left;
+
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.appoint-span {
+  background-color: rgba(191, 96, 255, 0.671);
+  padding: 10px;
+  float: left;
+
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.appoint-icon {
+  color: white;
+  font-size: 20px;
+}
+.appoint-margin {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.funfact-span {
+  background-color: rgba(255, 181, 96, 0.671);
+  padding: 8px;
+  float: left;
+
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.funfact-icon {
+  color: white;
+  font-size: 25px;
+}
+.funfact-margin {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.moti-icon {
+  color: white;
+  font-size: 20px;
+}
+.moti-margin {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.exer-margin {
+  margin-left: 55px;
+  margin-top: 10px;
+}
+.nutri-margin {
+  margin-left: 55px;
+  margin-top: 10px;
+}
+.profile {
+  height: 100vh;
+  width: 20%;
+  padding: 0;
+  background-color: rgb(204, 3, 3);
+  border: 1px solid rgb(204, 3, 3);
+
+  float: left;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+.image-profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 1px solid black;
+  background-color: #ffffff;
+  margin-top: 3px;
+  margin-left: 2px;
+}
+
+.dash-background {
+  background-color: rgb(204, 3, 3);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.dash-top-border {
+  border-top: 2px solid rgb(204, 3, 3);
+  border-left: 2px solid rgb(204, 3, 3);
+  border-right: 2px solid rgb(204, 3, 3);
+  border-bottom: 2px solid rgb(204, 3, 3);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: red;
+}
+.dash-top-border-icon {
+  color: #ffffff;
+  font-size: 15px;
+  padding-right: 5px;
+  text-align: center;
+  margin-top: 2px;
+}
+.profile-top {
+  background-color: rgb(255, 0, 0);
+  border-bottom: 1px solid rgb(204, 3, 3);
+}
+.profile-bottom {
+  background-color: rgb(204, 3, 3);
+  border-right: rgb(204, 3, 3);
+}
+.profile-icon {
+  float: right;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.profile-ul {
+  padding: 0;
+}
+.profile ul li {
+  background-color: #ff0000;
+  margin-top: 2px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+.profile ul li:hover {
+  background: rgb(255, 255, 255);
+}
+.profile ul li:hover .icon1 {
+  color: rgb(204, 3, 3);
+}
+.profile ul li:hover .title1 {
+  color: rgb(204, 3, 3);
+}
+
+.profile-ul li {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  /* border: 1px solid #ffffff; */
+}
+.profile ul {
+  top: 0;
+  left: 0;
+}
+.profile ul li {
+  list-style: none;
+}
+.profile-life-icon {
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+.profile ul li .icon1 {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+}
+.profile ul li .icon1 i {
+  font-size: 1.75em;
+}
+.profile ul li .title1 {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  color: white;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+}
+.profile ul li .linne {
+  color: black;
+  text-decoration: none;
 }

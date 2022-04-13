@@ -39,7 +39,7 @@ export const SingleExercise = () => {
                             <div className="d-flex justify-content-between">
                                 <div><h1 className="card-title">{item.name}</h1></div>
                                 <div><button type="button" className="btn cardbtn" onClick={() => {
-                                    actions.getFav(item.name);
+                                    actions.getFav(item);
                                     setBoolean(!boolean);
                                     console.log(store.favorites);
                                 }}>{boolean ? <i className="fas fa-heart heart-size"></i> : <i className="far fa-heart heart-size"></i>}</button></div>

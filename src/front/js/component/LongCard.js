@@ -7,16 +7,22 @@ export const Longcard = () => {
 
 
     return (
-        <div className="bigDiv long-card card mt-2 card-border dash-card" style={{ width: "40rem", Maxheight: "80%" }}>
-            <h5 className="card-header">Upcoming Appointments</h5>
+        <div className="bigDiv long-card card ms-3 mt-2 card-border dash-card" style={{ width: "45rem", Maxheight: "80%" }}>
+
             <div className="card-body">
-                <h5 className="card-title">Appointment text</h5>
-                <p className="card-text">Date and time</p>
+                <span className="appoint-span"><i className="fas fa-tasks appoint-icon"></i></span>
+                <div className="appoint-margin">
+                    <h5>Upcoming Appointments 🗓️</h5>
+                    <h7 className="card-title ms-3">Appointment text</h7>
+                    <p className="card-text ms-5">Date and time</p>
+                </div>
             </div>
 
             <div className="card-body">
-                <h5 className="card-title">Appointment text</h5>
-                <p className="card-text">Date and time</p>
+                <div className="appoint-margin">
+                    <h7 className="card-title ms-5">Appointment text</h7>
+                    <p className="card-text ms-5">Date and time</p>
+                </div>
             </div>
             <Link to="/planner">
                 <button className=" editBtn btn btn-primary d-flex justify-content-between">Edit appointments</button>

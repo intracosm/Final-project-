@@ -19,7 +19,7 @@ export const Nav2 = () => {
 		<nav className="navbar navbar-expand-lg navbar-light bg-light nav-border">
 			<div className="container-fluid">
 				<div className="logo-container">
-					<a className="navbar-brand" href="#"> <i className="fab fa-hackerrank red1 life-hack">Life<span className="black1">Hack</span></i></a>
+					<Link to="/dashboard"><i className="fab fa-hackerrank red1 life-hack">Life<span className="black1">Hack</span></i></Link>
 				</div>
 				<button
 
@@ -41,7 +41,7 @@ export const Nav2 = () => {
 							<NavLink
 								id="red1"
 								exact={true}
-								to="/"
+								to="/dashboard"
 								className={(isActive) => {
 									return `nav-link ${isActive ? "active" : ""}`;
 								}}

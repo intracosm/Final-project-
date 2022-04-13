@@ -15,13 +15,16 @@ class User(db.Model):
         return {
             "id": self.id,
             "email": self.email,
+            "password":self.password,
             # do not serialize the password, its a security breach
         }
 
 class Calendar(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    appointments = db.Column(db.String(120), unique=True, nullable=False)
-    is_active = db.Column(db.Boolean(), unique=False, nullable=False)
+    end_date = db.Column(db.DateTime)
+    start_date = db.Column(db.DateTime)
+    text = db.Column(db.String(120), nullable=False)
+    # is_active = db.Column(db.Boolean(), unique=False, nullable=False)
     # user_id = Column(Integer, ForeignKey('user.id'))
     # user = relationship(User)
 
@@ -31,7 +34,10 @@ class Calendar(db.Model):
     def serialize(self):
         return {
             "id": self.id,
-            "appointment": self.appointment,
+            "end_date":self.end_date,
+            "start_date":self.start_date,
+            "text":self.text
+
             # do not serialize the password, its a security breach
         }
 

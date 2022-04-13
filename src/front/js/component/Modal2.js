@@ -18,10 +18,11 @@ export const Modal2 = (props) => {
             <div className="modal-dialog" role="document">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <h4 className="modal-title d-flex justify-content-center">Nutritional Fact Of The Day<p>&nbsp;&nbsp;🥦🌽🍎🍓🥕</p></h4>
+                        <span className="modal-span"><i className="fas fa-leaf nutri-icon"></i></span>
+                        <h4 className="modal-title d-flex justify-content-center">Nutritional Fact Of The Day</h4>
                         {props.onClose ? (
 
-                            <button type="button" data-dismiss="modal" onClick={() => props.onClose()} className="btn-close text-reset float-right me-1" aria-label="Close"></button>
+                            <button type="button" data-dismiss="modal" onClick={() => props.onClose()} className="btn-close text-reset me-1 d-flex justify-content-center" aria-label="Close"></button>
 
                         ) : (
                             ""

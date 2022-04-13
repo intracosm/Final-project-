@@ -15,7 +15,9 @@ export const Exercise = () => {
 
     const [input, setInput] = useState("")
 
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     useEffect(() => {
         if (input == "") {
@@ -65,7 +67,7 @@ export const Exercise = () => {
 
             <Nav2 />
 
-            <div className="m-auto search-bar search-border">
+            <div className="m-auto search-bar nutritional-border">
                 <div className="d-flex justify-content-center">
                     <span>
                         <a className="navbar-brand2 " href="#"> <i className="fab fa-hackerrank exercise-icon"></i></a>
@@ -98,7 +100,7 @@ export const Exercise = () => {
 
                     return (
                         <div className="col-md-4 d-flex justify-content-center" index={index} key={index}>
-                            <div className="card1 card m-3 search-border exercise-card" style={{ width: "23rem" }}>
+                            <div className="card1 card m-3 search-border exercise-card card-border-exercises" style={{ width: "23rem" }}>
                                 <h5 className="card-header d-flex justify-content-center">{item.name}</h5>
                                 <img src={item.gifUrl}></img>
                                 <div className="card-body">

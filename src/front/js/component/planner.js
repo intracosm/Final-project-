@@ -3,6 +3,8 @@ import Scheduler from 'devextreme-react/scheduler';
 import { Context } from "../store/appContext";
 import { Modal } from "./modal.js";
 import { Nav2 } from './nav2';
+
+
 const currentDate = new Date(2022, 3, 21);
 const views = ['day', 'week', 'workWeek', 'month'];
 
