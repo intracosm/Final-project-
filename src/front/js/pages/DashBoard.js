@@ -30,9 +30,11 @@ export const Dashboard = () => {
         <div>
             <div className="profile">
                 <div className="profile-top">
-                    <img className="image-profile" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c30d4553-5312-4d24-8397-a383081a23e0/ddc0d7m-183fb81b-7013-406b-a512-9c552ac50bf6.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2MzMGQ0NTUzLTUzMTItNGQyNC04Mzk3LWEzODMwODFhMjNlMFwvZGRjMGQ3bS0xODNmYjgxYi03MDEzLTQwNmItYTUxMi05YzU1MmFjNTBiZjYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.g3sj1TgWqYtf1R8djiI7Y_inkOq9NBsfLT_cYDxoDog"></img>
+                    
+                    <img className="image-profile" src="https://www.pngfind.com/pngs/m/317-3177131_636682202684372240-user-profile-photo-round-hd-png-download.png"></img>
+                    
                     <Link to="/dashboard"><i className="fab fa-hackerrank white1 profile-icon"></i></Link>
-                    <div className="user-name"><h5 className=" ms-5 white1">Goku_Black234675</h5></div>
+                    <div className="user-name"><h5 className=" ms-5 white1">Chris_Blake234675</h5></div>
                     <div className="dash-background">
                     <div className="dash-top-border d-flex"><i className="fas fa-bars dash-top-border-icon"></i><h4 className="white1">Dashboard</h4></div>
                     </div>

@@ -366,7 +366,13 @@ ul li .title {
 .image-profile {
   width: 70px;
   height: 70px;
+  border-radius: 100%;
+  border: 1px solid black;
+  background-color: #ffffff;
+  margin-top: 3px;
+  margin-left: 2px;
 }
+
 .dash-background {
   background-color: rgb(204, 3, 3);
   border-top-left-radius: 10px;
