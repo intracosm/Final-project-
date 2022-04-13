@@ -41,7 +41,7 @@ export const Nav2 = () => {
 							<NavLink
 								id="red1"
 								exact={true}
-								to="/"
+								to="/dashboard"
 								className={(isActive) => {
 									return `nav-link ${isActive ? "active" : ""}`;
 								}}

@@ -70,7 +70,7 @@ export const Dashboard = () => {
             
             </div>
             <div className="top-div">
-            <div className="d-flex justify-content-center mt-2 mb-5">
+            <div className="d-flex justify-content-center mt-4 mb-4">
             
                 <div className="d-flex justify-content-center">
                     <input
