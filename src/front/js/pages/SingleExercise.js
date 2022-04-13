@@ -7,6 +7,9 @@ export const SingleExercise = () => {
     const { store, actions } = useContext(Context);
     const [boolean, setBoolean] = useState(false);
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
 
     const params = useParams();
