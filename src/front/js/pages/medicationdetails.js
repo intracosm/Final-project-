@@ -2,6 +2,7 @@ import React, { useState, useEffect, } from "react";
 import "react-tabs/style/react-tabs.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { useLocation, useParams } from "react-router-dom";
+import { Nav2 } from "../component/nav2";
 
 
 
@@ -41,7 +42,9 @@ export const DetailedMed = () => {
 	}, []);
 
 	return (
+
 		<div className="container ">
+			<Nav2 />
 			<div className="row">
 				<div className="col-12">
 					{/* <h1>{location.state.medication.medicationName}</h1> */}
