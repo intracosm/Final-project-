@@ -60,7 +60,7 @@ export const Medication = () => {
                             <div className="card-body">
                                 <h5 className="card-title">{item.drug}</h5>
                                 <p className="card-text">Disease: {item.disease}</p>
-
+                                <Link to={`/detailedmed/${item.drug}`}><button className="btn btn-primary">Learn more!</button></Link>
                             </div>
                         </div>
                     )
