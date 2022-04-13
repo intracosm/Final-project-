@@ -7,8 +7,9 @@ import "../../styles/style.css"
 export const Header = () => {
     return (
         <div className="container">
-            <h1>Life Hack</h1>
-            <h3 className="header-quote">'Success is the progressive realization of predetermined, worthwhile, personal goals'</h3>
+
+            <h2 className="header-quote">'Success is the progressive realization of predetermined, worthwhile, personal goals'</h2>
+            <h3 className=""></h3>
 
             <div className="carousel-wrapper" id="cf">
                 <img class="cf-photos" src="https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
@@ -20,7 +21,7 @@ export const Header = () => {
             </div>
             <div className="login-button">
                 <Link to="/patientlogin">
-                    <button className="pt-login-btn btn btn-primary">Login</button>
+                    <button className="pt-login-btn btn btn-primary">Get started</button>
                 </Link>
             </div>
         </div>
