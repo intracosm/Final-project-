@@ -357,7 +357,8 @@ ul li .title {
   width: 20%;
   padding: 0;
   background-color: rgb(204, 3, 3);
-  border: 0.3px solid white;
+  border: 1px solid rgb(204, 3, 3);
+
   float: left;
   border-top-right-radius: 5px !important;
   border-bottom-right-radius: 5px !important;
@@ -366,9 +367,33 @@ ul li .title {
   width: 70px;
   height: 70px;
 }
+.dash-background {
+  background-color: rgb(204, 3, 3);
+}
+.dash-top-border {
+  border-top: 2px solid rgb(204, 3, 3);
+  border-left: 2px solid rgb(204, 3, 3);
+  border-right: 2px solid rgb(204, 3, 3);
+  border-bottom: 2px solid rgb(204, 3, 3);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: red;
+}
+.dash-top-border-icon {
+  color: #ffffff;
+  font-size: 15px;
+  padding-right: 5px;
+  text-align: center;
+  margin-top: 2px;
+}
 .profile-top {
   background-color: rgb(255, 0, 0);
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(204, 3, 3);
 }
 .profile-bottom {
   background-color: rgb(204, 3, 3);

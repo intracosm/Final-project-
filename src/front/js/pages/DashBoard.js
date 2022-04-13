@@ -32,11 +32,13 @@ export const Dashboard = () => {
                 <div className="profile-top">
                     <img className="image-profile" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c30d4553-5312-4d24-8397-a383081a23e0/ddc0d7m-183fb81b-7013-406b-a512-9c552ac50bf6.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2MzMGQ0NTUzLTUzMTItNGQyNC04Mzk3LWEzODMwODFhMjNlMFwvZGRjMGQ3bS0xODNmYjgxYi03MDEzLTQwNmItYTUxMi05YzU1MmFjNTBiZjYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.g3sj1TgWqYtf1R8djiI7Y_inkOq9NBsfLT_cYDxoDog"></img>
                     <Link to="/dashboard"><i className="fab fa-hackerrank white1 profile-icon"></i></Link>
-                    <h5 className=" ms-5 white1">UserName</h5>
-                    <h4 className="ms-2 mt-5">Dashboard</h4>
+                    <div className="user-name"><h5 className=" ms-5 white1">Goku_Black234675</h5></div>
+                    <div className="dash-background">
+                    <div className="dash-top-border d-flex"><i className="fas fa-bars dash-top-border-icon"></i><h4 className="white1">Dashboard</h4></div>
+                    </div>
                 </div>
                 <div className="profile-bottom">
-                    <ul className="profile-ul">
+                    <ul className="profile-ul mt-3">
                         <li>
                             <Link to="/dashboard" className="linne d-flex">
                             <span className="icon1"><i className="fas fa-home turn-red"></i></span>
