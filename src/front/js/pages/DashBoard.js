@@ -34,7 +34,7 @@ export const Dashboard = () => {
                     <img className="image-profile" src="https://www.pngfind.com/pngs/m/317-3177131_636682202684372240-user-profile-photo-round-hd-png-download.png"></img>
                     
                     <Link to="/dashboard"><i className="fab fa-hackerrank white1 profile-icon"></i></Link>
-                    <div className="user-name"><h5 className=" ms-5 white1">Chris_Blake234675</h5></div>
+                    <div className="user-name"><h5 className=" ms-5 white1">Chris_Blake23</h5></div>
                     <div className="dash-background">
                     <div className="dash-top-border d-flex"><i className="fas fa-bars dash-top-border-icon"></i><h4 className="white1">Dashboard</h4></div>
                     </div>
