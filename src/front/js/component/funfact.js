@@ -43,7 +43,7 @@ export const FunFact = (props) => {
             <div className="card-body">
                 <span className="funfact-span "><i className="fab fa-facebook funfact-icon"></i></span>
                 <div className="funfact-margin">
-                    <h5 className="">Fact of the day</h5>
+                    <h5 className="">Fact of the day 📚</h5>
                     <p className="card-text d-flex justify-content-center">{info}</p>
                 </div>
             </div>

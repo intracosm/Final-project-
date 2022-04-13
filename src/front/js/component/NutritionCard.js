@@ -29,7 +29,7 @@ export const Nutritioncard = (props) => {
                     <div className="card-body">
                         <span className="nutri-span"><i className="fas fa-leaf nutri-icon"></i></span>
                         <div className="nutri-margin">
-                            <h5 className="black1">Nutritional Fact Of The Day</h5>
+                            <h5 className="black1">Nutritional Fact Of The Day  🥕</h5>
                             {store.nutrition.length > 0 && (
 
                                 <p className="black1 d-flex justify-content-center">

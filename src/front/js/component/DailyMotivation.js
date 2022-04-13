@@ -20,7 +20,7 @@ export const DailyMotivation = (props) => {
             <div className="card-body">
                 <span className="moti-span"><i className="fas fa-mountain moti-icon"></i></span>
                 <div className="moti-margin">
-                    <h5>Daily Motivation</h5>
+                    <h5>Daily Motivation 🗻</h5>
                     {store.quotes.length > 0 && (
                         <p className="d-flex justify-content-center">
                             "{quote.text}" - {quote.author}
