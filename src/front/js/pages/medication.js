@@ -64,7 +64,7 @@ export const Medication = () => {
                             </div>
                         </div>
                     )
-                }) : <div> Drug not found! </div>
+                }) : <div className="inputfoot"> No drug currently found... </div>
             }
         </div>
     )

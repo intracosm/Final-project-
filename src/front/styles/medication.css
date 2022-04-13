@@ -8,3 +8,11 @@
 body {
   font-family: "Merriweather", serif;
 }
+
+.inputfoot {
+  font-size: medium;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  margin: auto;
+}
