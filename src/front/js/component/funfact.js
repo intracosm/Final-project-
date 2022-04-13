@@ -39,7 +39,7 @@ export const FunFact = (props) => {
     //     return Math.floor(Math.random() * 100);
     // }
     return (
-        <div className="short-card card m-3 card-border dash-card" style={{ width: "18rem" }}>
+        <div className="short-card card m-3 card-border dash-card" style={{ width: "20rem" }}>
             <h5 className="card-header">Fact of the day</h5>
             <div className="card-body">
                 <h5 className="card-title"></h5>

@@ -7,7 +7,7 @@ export const Longcard = () => {
 
 
     return (
-        <div className="bigDiv long-card card mt-2 card-border dash-card" style={{ width: "40rem", Maxheight: "80%" }}>
+        <div className="bigDiv long-card card ms-3 mt-2 card-border dash-card" style={{ width: "45rem", Maxheight: "80%" }}>
             <h5 className="card-header">Upcoming Appointments</h5>
             <div className="card-body">
                 <h5 className="card-title">Appointment text</h5>

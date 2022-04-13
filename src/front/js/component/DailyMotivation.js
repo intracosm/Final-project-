@@ -16,18 +16,18 @@ export const DailyMotivation = (props) => {
 
 
     return (
-        <div className="short-card card m-3 dash-card card-border" style={{ width: "18rem" }}>
-            <h4 className="card-header">Daily Motivation</h4>
-            {show && (
-                <div className="card-body">
-                    <h5 className="card-title"></h5>
+        <div className="short-card card m-3 dash-card card-border" style={{ width: "20rem" }}>
+            <div className="card-body">
+                <span className="moti-span"><i className="fas fa-mountain moti-icon"></i></span>
+                <div className="moti-margin">
+                    <h5>Daily Motivation</h5>
                     {store.quotes.length > 0 && (
-                        <p>
+                        <p className="d-flex justify-content-center">
                             "{quote.text}" - {quote.author}
                         </p>
                     )}
                 </div>
-            )}
+            </div>
         </div>
     )
 }

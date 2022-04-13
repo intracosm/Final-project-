@@ -9,35 +9,42 @@ export const Exercisecard = (props) => {
     const { store, actions } = useContext(Context);
     let exercises = store.exercises[getRandomInt()];
     const [show, setShow] = useState(true);
+    const [favlist, setFavlist] = useState([]);
 
     function getRandomInt() {
         return Math.floor(Math.random() * 1327);
     }
 
-
-    const reload = () => {
-        return window.onbeforeunload = function () {
-            window.scrollTo(0, 0);
-        };
+    const Trash = (index) => {
+        store.favorites.filter((item, i) => i != index)
     }
+
+    useEffect(() => {
+
+    }, [store.favorites]);
+
 
 
 
 
     return (
         <div>
-            <Link onClick={() => reload()} className="linnk" to="/exercises">
-                <div className="short-card card m-3 card-border dash-card" style={{ width: "18rem" }} >
-                    <h4 className="black1 card-header">Weekly Exercise Log</h4>
+            <Link className="linnk" to="/exercises">
+                <div className="short-card card m-3 card-border dash-card" style={{ width: "20rem" }} >
+
                     <div className="card-body">
-                        <p className="black1">Lets Start This Week Off Strong 💪</p>
-                        <ul>
-                            {store.favorites.map((fav, index) => {
-                                return (<li className="black1" key={index}>{fav}</li>
-                                )
-                            })}
-                        </ul>
-                        {/* {show && (
+
+                        <span className="span-icon"><i className="fas fa-dumbbell white-icon"></i></span>
+                        <div className="exer-margin">
+                            <h5 className="black1">Weekly Exercise Log 💪</h5>
+                            <p className="black1">Lets Start This Week Off Strong </p>
+                            <ul>
+                                {store.favorites.map((fav, index) => {
+                                    return (<Link className="linnk d-flex justify-content-center" to={`/single-exercise/${fav.id}`}><li id="black1" className="black1" key={index}>{fav.name}</li></Link>
+                                    )
+                                })}
+                            </ul>
+                            {/* {show && (
                             <div className="card-body">
                                 {store.exercises.length > 0 && (
                                     <p className="black1">
@@ -46,6 +53,7 @@ export const Exercisecard = (props) => {
                                 )}
                             </div>
                         )} */}
+                        </div>
                     </div>
                 </div >
             </Link>
@@ -58,3 +66,5 @@ export const Exercisecard = (props) => {
 //     date: propTypes.string,
 //     body: propTypes.string
 // }
+
+

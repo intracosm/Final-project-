@@ -27,41 +27,100 @@ export const Dashboard = () => {
 
 
     return (
-        <div className="container-fluid">
-
-
-            <Nav2 />
-
-            <div className="dashpage d-flex justify-content-between">
-                <div className="card1-div">
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-
-                </div>
-                <div className="long-card-div">
-                    <Longcard />
-                </div>
-                <div className="short-card-div">
-                    <Modal2
-                        show={state.showModal}
-                        onClose={() => setState({ showModal: false })}
+        <div>
+            <div className="profile">
+            <a className="navbar-brand" href="#"> <i className="fab fa-hackerrank white1 profile-icon"></i></a>
+            {/* <img className="profile-image" src="https://images.unsplash.com/photo-1648876676540-ed9fac00af05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=357&q=80"></img>
+            <h3 className="ms-2">User Name</h3>
+            <h5>Dashboard</h5> */}
+            <ul className="profile-ul">
+                <li>
+                    <Link to="/dashboard" className="linne d-flex">
+                    <span className="icon1"><i className="fas fa-home turn-red"></i></span>
+                    <span className="title1">Home</span>
+                    </Link>
+                    </li>
+                <li>
+                    <Link to="/planner" className="linne d-flex">
+                    <span className="icon1"><i className="fas fa-calendar-alt"></i></span>
+                    <span className="title1">Calendar</span>
+                    </Link>
+                    </li>
+                <li>
+                    <Link to="/exercises" className="linne d-flex">
+                    <span className="icon1"><i className="fas fa-dumbbell"></i></span>
+                    <span className="title1">Exercises</span>
+                    </Link>
+                    </li>
+                <li>
+                    <Link to="/medications" className="linne d-flex">
+                    <span className="icon1"><i className="fas fa-prescription"></i></span>
+                    <span className="title1">Med-Search</span>
+                    </Link>
+                    
+                    
+                </li>
+                <li>
+                    <Link to="/patientlogin" className="linne d-flex">
+                    <span className="icon1"><i className="fas fa-sign-out-alt"></i></span>
+                    <span className="title1">Sign Out</span>
+                    </Link>
+                    </li>
+            </ul>
+            
+            </div>
+            <div className="top-div">
+            <div className="d-flex justify-content-center mt-2 mb-5">
+            
+                <div className="d-flex justify-content-center">
+                    <input
+                        className="form-control"
+                        type="text"
+                        placeholder=""
                     />
-                    <Nutritioncard />
-                    <Exercisecard />
-                    <DailyMotivation />
+                    <button id="search-icon" type="button" className="btn btn-header"><i className="fas fa-search"></i></button>
+                    <a className="navbar-brand" href="#"> <i className="fab fa-hackerrank red1 profile-life-icon ms-3">Life<span className="black1">Hack</span></i></a>
+                </div>
+            </div>
+                
 
 
 
-                    <FunFact />
+                <div className="dashpage d-flex justify-content-between">
+
+
+                    <div className="long-card-div">
+                        <Longcard />
+                        <div className="d-flex"><FunFact />  <DailyMotivation /></div>
+                    </div>
+                    <div className="short-card-div">
+                        <Modal2
+                            show={state.showModal}
+                            onClose={() => setState({ showModal: false })}
+                        />
+                        <Nutritioncard />
+                        <Exercisecard />
+
+                    </div>
+
                 </div>
 
             </div>
-
         </div>
     );
 };
 {/* <Link to="/">
 					<button className="btn btn-primary">Back home</button>
 				</Link> */}
+
+
+                // Home
+                //     Calendar
+               
+                //     Exercises
+                
+                //     Med-Search
+                
+                //     Dashboard
+               
+                //     Sign Out

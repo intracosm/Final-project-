@@ -24,19 +24,19 @@ export const Nutritioncard = (props) => {
     return (
         <div>
             <Link className="linnk" to={{ pathname: "/nutritionalfacts/" + store.factoftheday.id, state: { props } }}>
-                <div className="short-card card m-3 card-border dash-card" style={{ width: "18rem" }} >
-                    <h4 className="black1 card-header">Nutritional Fact Of The Day</h4>
-                    <div className="card-body">
-                        {show && (
-                            <div className="card-body">
-                                {store.nutrition.length > 0 && (
+                <div className="short-card card m-3 card-border dash-card" style={{ width: "20rem" }} >
 
-                                    <p className="black1">
-                                        {store.factoftheday && store.factoftheday.sample}
-                                    </p>
-                                )}
-                            </div>
-                        )}
+                    <div className="card-body">
+                        <span className="nutri-span"><i className="fas fa-leaf nutri-icon"></i></span>
+                        <div className="nutri-margin">
+                            <h5 className="black1">Nutritional Fact Of The Day</h5>
+                            {store.nutrition.length > 0 && (
+
+                                <p className="black1 d-flex justify-content-center">
+                                    {store.factoftheday && store.factoftheday.sample}
+                                </p>
+                            )}
+                        </div>
                     </div>
                 </div>
             </Link>

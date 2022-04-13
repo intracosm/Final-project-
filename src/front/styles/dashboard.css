@@ -2,6 +2,11 @@
 
 body {
   font-family: "Merriweather", serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+navbar {
+  width: 100%;
 }
 span {
   padding-left: 3px;
@@ -10,10 +15,11 @@ span {
 h2 {
   padding-left: 3px;
 }
-.container-fluid {
-  width: 100%;
+.top-div {
+  width: 80%;
   margin: 0;
   padding: 0;
+  float: right;
 }
 #black1:hover {
   color: rgb(183, 1, 1);
@@ -146,6 +152,8 @@ ul li .title {
 .exercise-card:hover {
   transition: 0.9s;
   transform: scale(1.1);
+  box-shadow: 0 0 5px #ffffff, 0 0 10px rgb(255, 255, 255),
+    0 0 5px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
 }
 .dash-card:hover {
   transition: 0.1s;
@@ -170,14 +178,18 @@ ul li .title {
     rgba(0, 0, 0, 0.09) 3px 16px 8px, rgba(0, 0, 0, 0.09) 4px 3px 32px 16px;
 }
 .card-border {
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  border: 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.09) 10px 2px 10px,
+    rgba(0, 0, 0, 0.09) 2px 5px 32px 10px, rgba(0, 0, 0, 0.09) 3px 3px 8px 4px,
+    rgba(0, 0, 0, 0.09) 3px 16px 8px, rgba(0, 0, 0, 0.09) 4px 3px 32px 16px;
+  border: 1px solid black;
   border-top-left-radius: 20px !important;
   border-bottom-left-radius: 20px !important;
   border-top-right-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
+}
+.card-border:hover {
+  box-shadow: 0 0 5px #ffffff, 0 0 5px rgb(255, 255, 255),
+    0 0 4px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
 }
 .nutritional-border {
   box-shadow: rgba(0, 0, 0, 0.09) 10px 2px 10px,
@@ -214,7 +226,8 @@ ul li .title {
 }
 
 .dashpage {
-  background-color: rgb(142, 142, 142);
+  background-color: white;
+  width: 100%;
 }
 
 .image {
@@ -248,4 +261,131 @@ ul li .title {
 
 .bigDiv {
   justify-content: center;
+}
+.white-icon {
+  color: white;
+  font-size: 20px;
+}
+.span-icon {
+  background-color: rgba(255, 0, 0, 0.671);
+  border-radius: 100%;
+
+  padding: 10px;
+  float: left;
+}
+
+.nutri-icon {
+  color: white;
+  font-size: 20px;
+}
+.nutri-span {
+  background-color: rgba(1, 209, 1, 0.671);
+  padding: 10px;
+  float: left;
+
+  border-radius: 100%;
+}
+.modal-span {
+  background-color: rgba(1, 209, 1, 0.671);
+  padding: 10px;
+  float: left;
+
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.moti-span {
+  background-color: rgba(96, 223, 255, 0.671);
+  padding: 10px;
+  float: left;
+
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.moti-icon {
+  color: white;
+  font-size: 20px;
+}
+.moti-margin {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.exer-margin {
+  margin-left: 55px;
+  margin-top: 10px;
+}
+.nutri-margin {
+  margin-left: 55px;
+  margin-top: 10px;
+}
+.profile {
+  height: 100vh;
+  width: 20%;
+  padding: 0;
+  background-color: red;
+  border: 0.3px solid black;
+  float: left;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+.profile-icon {
+  float: right;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.profile-ul {
+  padding: 0;
+}
+.profile ul li:hover {
+  background: rgb(255, 255, 255);
+}
+.profile ul li:hover .icon1 {
+  color: red;
+}
+.profile ul li:hover .title1 {
+  color: red;
+}
+
+.profile-ul li {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.profile ul {
+  top: 0;
+  left: 0;
+}
+.profile ul li {
+  list-style: none;
+
+  margin-left: 10px;
+}
+.profile-life-icon {
+  font-size: 25px;
+  float: right;
+}
+.profile ul li .icon1 {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+}
+.profile ul li .icon1 i {
+  font-size: 1.75em;
+}
+.profile ul li .title1 {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  color: white;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+}
+.profile ul li .linne {
+  color: black;
+  text-decoration: none;
 }
