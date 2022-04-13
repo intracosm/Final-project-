@@ -93,17 +93,7 @@ export const Navbar = () => {
 								Dashboard
 							</NavLink>
 						</li>
-						<li className="nav-item">
-							<NavLink
-								id="black1"
-								to="/patientlogin"
-								className={(isActive) => {
-									return `nav-link ${isActive ? "active" : ""}`;
-								}}
-							>
-								Sign In
-							</NavLink>
-						</li>
+
 					</ul>
 
 				</div>

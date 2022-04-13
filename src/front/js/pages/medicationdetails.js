@@ -1,7 +1,8 @@
 import React, { useState, useEffect, } from "react";
 import "react-tabs/style/react-tabs.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
+
 
 
 export const DetailedMed = () => {
@@ -9,13 +10,11 @@ export const DetailedMed = () => {
 
 
 	const [medicationData, setMedicationData] = useState([]);
+	const params = useParams();
+	const drugname = params.drugname;
 
-	useEffect(() => {
-		// let str = location.state.medication.medicationName;
-		// let arr = str.split("(");
-		// let newStr = arr[0].trim();
-
-		fetch(`https://api.fda.gov/drug/label.json?search=adverse_reactions:adderall`)
+	const getDetails = (drugname) => {
+		fetch(`https://api.fda.gov/drug/label.json?search=adverse_reactions:${drugname}`)
 			.then(function (response) {
 				if (!response.ok) {
 					throw Error(response.statusText);
@@ -29,6 +28,16 @@ export const DetailedMed = () => {
 			.catch(function (err) {
 				console.log("Fetch Error :-S", err);
 			});
+
+	}
+	useEffect(() => {
+		// let str = location.state.medication.medicationName;
+		// let arr = str.split("(");
+		// let newStr = arr[0].trim();
+		getDetails(drugname);
+
+
+
 	}, []);
 
 	return (
