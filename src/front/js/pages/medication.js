@@ -52,7 +52,7 @@ export const Medication = () => {
                 setInput(e.target.value)
 
             }} />
-                <button className="btn btn-primary" onClick={() => getDrug(input)} >Search for medication</button></div>
+                <button className="btn btn-danger" onClick={() => getDrug(input)} >Search for medication</button></div>
             {
                 drug.length > 0 ? drug.map((item, index) => {
                     return (
@@ -60,11 +60,11 @@ export const Medication = () => {
                             <div className="card-body">
                                 <h5 className="card-title">{item.drug}</h5>
                                 <p className="card-text">Disease: {item.disease}</p>
-                                <Link to={`/detailedmed/${item.drug}`}><button className="btn btn-primary">Learn more!</button></Link>
+                                <Link to={`/detailedmed/${item.drug}`}><button className="btn btn-danger">Learn more!</button></Link>
                             </div>
                         </div>
                     )
-                }) : <div> Drug not found! </div>
+                }) : <div className="inputfoot"> No drug currently found... </div>
             }
         </div>
     )
