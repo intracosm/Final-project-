@@ -40,10 +40,12 @@ export const FunFact = (props) => {
     // }
     return (
         <div className="short-card card m-3 card-border dash-card" style={{ width: "20rem" }}>
-            <h5 className="card-header">Fact of the day</h5>
             <div className="card-body">
-                <h5 className="card-title"></h5>
-                <p className="card-text">{info}</p>
+                <span className="funfact-span "><i className="fab fa-facebook funfact-icon"></i></span>
+                <div className="funfact-margin">
+                    <h5 className="">Fact of the day</h5>
+                    <p className="card-text d-flex justify-content-center">{info}</p>
+                </div>
             </div>
         </div>
 
