@@ -6,32 +6,22 @@ import "../../styles/style.css"
 
 export const Header = () => {
     return (
-        <div className="intro-logo jumbo-bg">
+        <div className="container">
             <h1>Life Hack</h1>
-            <h3>'Success is the progressive realization of predetermined, worthwhile, personal goals'</h3>
-            <img
-                src="https://bootstrapmade.com/demo/themes/eStartup/img/hero-img.png"
-                className=""
-                alt=""
-            />
-            <div className="intro-button">
-                <a href="">Get Started</a>
+            <h3 className="header-quote">'Success is the progressive realization of predetermined, worthwhile, personal goals'</h3>
+
+            <div className="carousel-wrapper" id="cf">
+                <img class="cf-photos" src="https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
+
+                <img class="cf-photos" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=853&q=80" />
+
+                <img class="cf-photos" src="https://images.unsplash.com/photo-1577368211130-4bbd0181ddf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=860&q=80" />
+
             </div>
-
-
-            <div className="company-icons">
-                <span className="company-icons__item">
-                    <i className="fab fa-apple" />
-                    app store
-                </span>
-                <span className="company-icons__item">
-                    <i className="fab fa-google-play" />
-                    google play
-                </span>
-                <span className="company-icons__item">
-                    <i className="fab fa-windows" />
-                    windows
-                </span>
+            <div className="login-button">
+                <Link to="/patientlogin">
+                    <button className="pt-login-btn btn btn-primary">Login</button>
+                </Link>
             </div>
         </div>
     )
