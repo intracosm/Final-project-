@@ -29,58 +29,57 @@ export const Dashboard = () => {
     return (
         <div>
             <div className="profile">
-            <a className="navbar-brand" href="#"> <i className="fab fa-hackerrank white1 profile-icon"></i></a>
-            {/* <img className="profile-image" src="https://images.unsplash.com/photo-1648876676540-ed9fac00af05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=357&q=80"></img>
-            <h3 className="ms-2">User Name</h3>
-            <h5>Dashboard</h5> */}
-            <ul className="profile-ul">
-                <li>
-                    <Link to="/dashboard" className="linne d-flex">
-                    <span className="icon1"><i className="fas fa-home turn-red"></i></span>
-                    <span className="title1">Home</span>
-                    </Link>
-                    </li>
-                <li>
-                    <Link to="/planner" className="linne d-flex">
-                    <span className="icon1"><i className="fas fa-calendar-alt"></i></span>
-                    <span className="title1">Calendar</span>
-                    </Link>
-                    </li>
-                <li>
-                    <Link to="/exercises" className="linne d-flex">
-                    <span className="icon1"><i className="fas fa-dumbbell"></i></span>
-                    <span className="title1">Exercises</span>
-                    </Link>
-                    </li>
-                <li>
-                    <Link to="/medications" className="linne d-flex">
-                    <span className="icon1"><i className="fas fa-prescription"></i></span>
-                    <span className="title1">Med-Search</span>
-                    </Link>
-                    
-                    
-                </li>
-                <li>
-                    <Link to="/patientlogin" className="linne d-flex">
-                    <span className="icon1"><i className="fas fa-sign-out-alt"></i></span>
-                    <span className="title1">Sign Out</span>
-                    </Link>
-                    </li>
-            </ul>
+                <div className="profile-top">
+                    <img className="image-profile" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c30d4553-5312-4d24-8397-a383081a23e0/ddc0d7m-183fb81b-7013-406b-a512-9c552ac50bf6.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2MzMGQ0NTUzLTUzMTItNGQyNC04Mzk3LWEzODMwODFhMjNlMFwvZGRjMGQ3bS0xODNmYjgxYi03MDEzLTQwNmItYTUxMi05YzU1MmFjNTBiZjYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.g3sj1TgWqYtf1R8djiI7Y_inkOq9NBsfLT_cYDxoDog"></img>
+                    <Link to="/dashboard"><i className="fab fa-hackerrank white1 profile-icon"></i></Link>
+                    <h5 className=" ms-5 white1">UserName</h5>
+                    <h4 className="ms-2 mt-5">Dashboard</h4>
+                </div>
+                <div className="profile-bottom">
+                    <ul className="profile-ul">
+                        <li>
+                            <Link to="/dashboard" className="linne d-flex">
+                            <span className="icon1"><i className="fas fa-home turn-red"></i></span>
+                            <span className="title1">Home</span>
+                            </Link>
+                            </li>
+                        <li>
+                            <Link to="/planner" className="linne d-flex">
+                            <span className="icon1"><i className="fas fa-calendar-alt"></i></span>
+                            <span className="title1">Calendar</span>
+                            </Link>
+                            </li>
+                        <li>
+                            <Link to="/exercises" className="linne d-flex">
+                            <span className="icon1"><i className="fas fa-dumbbell"></i></span>
+                            <span className="title1">Exercises</span>
+                            </Link>
+                            </li>
+                        <li>
+                            <Link to="/medications" className="linne d-flex">
+                            <span className="icon1"><i className="fas fa-prescription"></i></span>
+                            <span className="title1">Med-Search</span>
+                            </Link>
+                            
+                            
+                        </li>
+                        <li>
+                            <Link to="/patientlogin" className="linne d-flex">
+                            <span className="icon1"><i className="fas fa-sign-out-alt"></i></span>
+                            <span className="title1">Sign Out</span>
+                            </Link>
+                            </li>
+                    </ul>
+            </div>
             
             </div>
             <div className="top-div">
-            <div className="d-flex justify-content-center mt-4 mb-4">
+            <div className="d-flex justify-content-end mt-4 mb-4">
             
-                <div className="d-flex justify-content-center">
-                    <input
-                        className="form-control"
-                        type="text"
-                        placeholder=""
-                    />
-                    <button id="search-icon" type="button" className="btn btn-header"><i className="fas fa-search"></i></button>
-                    <a className="navbar-brand" href="#"> <i className="fab fa-hackerrank red1 profile-life-icon ms-3">Life<span className="black1">Hack</span></i></a>
-                </div>
+                
+                  
+                    <i className="fab fa-hackerrank red1 profile-life-icon ms-3"></i>
+            
             </div>
                 
 

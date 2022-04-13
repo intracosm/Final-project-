@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
-
 body {
-  font-family: "Merriweather", serif;
+  /* font-family: "Merriweather", serif; */
   overflow-x: hidden;
   min-height: 100vh;
 }
@@ -189,8 +187,8 @@ ul li .title {
   border-bottom-right-radius: 20px !important;
 }
 .card-border:hover {
-  box-shadow: 0 0 5px #ffffff, 0 0 5px rgb(255, 255, 255),
-    0 0 4px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+  box-shadow: 0 0 5px #ff0000, 0 0 5px rgb(255, 0, 0), 0 0 4px rgb(255, 0, 0),
+    0 0 10px rgb(255, 0, 0);
 }
 .card-border-exercises:hover {
   box-shadow: 0 0 5px #ff0000, 0 0 5px rgb(255, 0, 0), 0 0 4px rgb(255, 0, 0),
@@ -306,6 +304,38 @@ ul li .title {
   margin-right: 10px;
   border-radius: 100%;
 }
+.appoint-span {
+  background-color: rgba(191, 96, 255, 0.671);
+  padding: 10px;
+  float: left;
+
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.appoint-icon {
+  color: white;
+  font-size: 20px;
+}
+.appoint-margin {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.funfact-span {
+  background-color: rgba(255, 181, 96, 0.671);
+  padding: 8px;
+  float: left;
+
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.funfact-icon {
+  color: white;
+  font-size: 25px;
+}
+.funfact-margin {
+  margin-left: 20px;
+  margin-top: 10px;
+}
 .moti-icon {
   color: white;
   font-size: 20px;
@@ -326,11 +356,23 @@ ul li .title {
   height: 100vh;
   width: 20%;
   padding: 0;
-  background-color: red;
+  background-color: rgb(204, 3, 3);
   border: 0.3px solid white;
   float: left;
   border-top-right-radius: 5px !important;
   border-bottom-right-radius: 5px !important;
+}
+.image-profile {
+  width: 70px;
+  height: 70px;
+}
+.profile-top {
+  background-color: rgb(255, 0, 0);
+  border-bottom: 1px solid white;
+}
+.profile-bottom {
+  background-color: rgb(204, 3, 3);
+  border-right: rgb(204, 3, 3);
 }
 .profile-icon {
   float: right;
@@ -341,19 +383,28 @@ ul li .title {
 .profile-ul {
   padding: 0;
 }
+.profile ul li {
+  background-color: #ff0000;
+  margin-top: 2px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
 .profile ul li:hover {
   background: rgb(255, 255, 255);
 }
 .profile ul li:hover .icon1 {
-  color: red;
+  color: rgb(204, 3, 3);
 }
 .profile ul li:hover .title1 {
-  color: red;
+  color: rgb(204, 3, 3);
 }
 
 .profile-ul li {
   border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 1px solid #ffffff;
 }
 .profile ul {
   top: 0;
@@ -361,13 +412,12 @@ ul li .title {
 }
 .profile ul li {
   list-style: none;
-
-  margin-left: 10px;
 }
 .profile-life-icon {
-  font-size: 25px;
-  float: right;
+  font-size: 50px;
+  margin-right: 10px;
 }
+
 .profile ul li .icon1 {
   position: relative;
   display: block;

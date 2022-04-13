@@ -19,7 +19,7 @@ export const Navbar = () => {
 		<nav className="navbar navbar-expand-lg navbar-light bg-light nav-border">
 			<div className="container-fluid">
 				<div className="logo-container">
-					<a className="navbar-brand" href="https://3000-intracosm-finalproject-cctck6uj75b.ws-us39a.gitpod.io/"> <i className="fab fa-hackerrank red1 life-hack">Life<span className="black1">Hack</span></i></a>
+					<Link to="/"> <i className="fab fa-hackerrank red1 life-hack">Life<span className="black1">Hack</span></i></Link>
 				</div>
 				<button
 

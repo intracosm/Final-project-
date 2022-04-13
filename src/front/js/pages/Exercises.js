@@ -15,7 +15,9 @@ export const Exercise = () => {
 
     const [input, setInput] = useState("")
 
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     useEffect(() => {
         if (input == "") {
