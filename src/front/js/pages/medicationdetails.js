@@ -52,11 +52,7 @@ export const DetailedMed = () => {
 			// </div > * /} */}
 
 
-<<<<<<< HEAD
-			<div className="container m-auto row">
-=======
 			< div className="container m-auto row" >
->>>>>>> 1a10439add1b382245ee9df3a897f7f76143ea93
 				<div>
 					{/* Nav tabs start */}
 					<Tabs>
