@@ -5,8 +5,10 @@ import reactRouterDom from "react-router-dom";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 import { Navbar } from "../component/navbar";
+import { Header } from "../component/header";
 
 //include your index.scss file into the bundle
+import "../../styles/style.css"
 
 // styles from devextreme 
 import 'devextreme/dist/css/dx.light.css';
@@ -18,14 +20,7 @@ export const LandingPage = () => {
         <div className="app-wrapper">
             <Navbar />
             <div className="intro-logo jumbo-bg">
-                <h1>Life Hack</h1>
-                <h3>'Success is the progressive realization of predetermined, worthwhile, personal goals'</h3>
-
-                <div className="login-button">
-                    <Link to="/patientlogin">
-                        <button className="pt-login-btn btn btn-primary">Login</button>
-                    </Link>
-                </div>
+                <Header />
 
             </div>
         </div>

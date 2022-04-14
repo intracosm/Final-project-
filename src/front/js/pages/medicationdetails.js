@@ -43,7 +43,7 @@ export const DetailedMed = () => {
 
 	return (
 
-		<div className="container ">
+		<div>
 			<Nav2 />
 			<div className="row">
 				<div className="col-12">
@@ -52,7 +52,7 @@ export const DetailedMed = () => {
 			</div>
 
 
-			<div className="row">
+			<div className="container m-auto row">
 				<div>
 					{/* Nav tabs start */}
 					<Tabs>
