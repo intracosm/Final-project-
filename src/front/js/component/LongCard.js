@@ -13,14 +13,14 @@ export const Longcard = () => {
                 <span className="appoint-span"><i className="fas fa-tasks appoint-icon"></i></span>
                 <div className="appoint-margin">
                     <h5>Upcoming Appointments 🗓️</h5>
-                    <h7 className="card-title ms-3">Appointment text</h7>
+                    <h7 className="card-title ms-3">Appointment title</h7>
                     <p className="card-text ms-5">Date and time</p>
                 </div>
             </div>
 
             <div className="card-body">
                 <div className="appoint-margin">
-                    <h7 className="card-title ms-5">Appointment text</h7>
+                    <h7 className="card-title ms-5">Appointment title</h7>
                     <p className="card-text ms-5">Date and time</p>
                 </div>
             </div>

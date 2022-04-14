@@ -45,14 +45,18 @@ export const DetailedMed = () => {
 
 		<div>
 			<Nav2 />
-			<div className="row">
+			{/* {/* <div className="row">
 				<div className="col-12">
 					{/* <h1>{location.state.medication.medicationName}</h1> */}
-				</div>
-			</div>
+			{/* </div>
+			// </div > * /} */}
 
 
+<<<<<<< HEAD
 			<div className="container m-auto row">
+=======
+			< div className="container m-auto row" >
+>>>>>>> 1a10439add1b382245ee9df3a897f7f76143ea93
 				<div>
 					{/* Nav tabs start */}
 					<Tabs>
@@ -109,7 +113,7 @@ export const DetailedMed = () => {
 					</Tabs>
 					{/* Nav tabs end */}
 				</div>
-			</div>
-		</div>
+			</div >
+		</div >
 	);
 };
