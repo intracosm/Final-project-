@@ -3,8 +3,8 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
 }
-navbar {
-  width: 100%;
+.navbar {
+  width: 100vw;
 }
 span {
   padding-left: 3px;

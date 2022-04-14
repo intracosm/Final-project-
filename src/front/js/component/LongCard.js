@@ -20,7 +20,7 @@ export const Longcard = () => {
 
             <div className="card-body">
                 <div className="appoint-margin">
-                    <h7 className="card-title ms-5">Appointment text</h7>
+                    <h7 className="card-title ms-5">Appointment title</h7>
                     <p className="card-text ms-5">Date and time</p>
                 </div>
             </div>
