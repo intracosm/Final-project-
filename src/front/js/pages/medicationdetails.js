@@ -43,16 +43,16 @@ export const DetailedMed = () => {
 
 	return (
 
-		<div className="container ">
+		<div>
 			<Nav2 />
-			<div className="row">
+			{/* {/* <div className="row">
 				<div className="col-12">
 					{/* <h1>{location.state.medication.medicationName}</h1> */}
-				</div>
-			</div>
+			{/* </div>
+			// </div > * /} */}
 
 
-			<div className="row">
+			< div className="container m-auto row" >
 				<div>
 					{/* Nav tabs start */}
 					<Tabs>
@@ -109,7 +109,7 @@ export const DetailedMed = () => {
 					</Tabs>
 					{/* Nav tabs end */}
 				</div>
-			</div>
-		</div>
+			</div >
+		</div >
 	);
 };

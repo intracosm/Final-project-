@@ -21,9 +21,7 @@ export const LandingPage = () => {
             <Navbar />
             <div className="intro-logo jumbo-bg">
                 <Header />
-                <div id="cf">
 
-                </div>
             </div>
         </div>
     )

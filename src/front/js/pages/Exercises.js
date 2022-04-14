@@ -100,12 +100,14 @@ export const Exercise = () => {
 
                     return (
                         <div className="col-md-4 d-flex justify-content-center" index={index} key={index}>
-                            <div className="card1 card m-3 search-border exercise-card card-border-exercises" style={{ width: "23rem" }}>
-                                <h5 className="card-header d-flex justify-content-center">{item.name}</h5>
-                                <img src={item.gifUrl}></img>
-                                <div className="card-body">
-                                    <Link className="d-flex justify-content-center" to={`/single-exercise/${item.id}`}>
-                                        <button type="button" className="btn btn-primary">View Exercise</button>
+                            <div className="card1 card search-border exercise-card card-border-exercises" style={{ width: "23rem" }}>
+                                <div className="exercise-card-header">
+                                    <h5 className=" d-flex justify-content-center black1 mt-2">{item.name}</h5>
+                                </div>
+                                <img className="exercise-card-image" src={item.gifUrl}></img>
+                                <div className="card-body  exercise-button bg-light">
+                                    <Link className="d-flex justify-content-center linnk" to={`/single-exercise/${item.id}`}>
+                                        <button type="button" className="btn exer-button white1">View Exercise</button>
                                     </Link>
                                 </div>
                             </div>

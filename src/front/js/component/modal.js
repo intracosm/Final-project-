@@ -14,8 +14,8 @@ export const Modal = () => {
     return (
         <div className="modald d-flex justify-content-center">
             {show && (
-                <div className="alert alert-success" role="alert">
-                    <h4 className="alert-heading">Attention!</h4>
+                <div className="wisdoms alert alert-success" role="alert">
+                    <h4 className="alert-heading">Stay Motivated!!!</h4>
                     {store.quotes.length > 0 && (
                         <p>
                             "{quote.text}" - {quote.author}
@@ -28,7 +28,7 @@ export const Modal = () => {
                             Whenever you need to, be sure to use margin utilities to keep
                             things nice and tidy and schedule appointments accordingly :D.
                         </p>
-                        <button className="btn btn-success" onClick={() => setShow(false)}>
+                        <button className="btn btn-secondary" onClick={() => setShow(false)}>
                             close
                         </button>
                     </div>

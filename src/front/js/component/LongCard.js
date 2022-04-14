@@ -7,7 +7,7 @@ export const Longcard = () => {
 
 
     return (
-        <div className="bigDiv long-card card ms-3 mt-2 card-border dash-card" style={{ width: "45rem", Maxheight: "80%" }}>
+        <div className="bigDiv long-card card ms-3 mt-2 card-border dash-card" style={{ width: "100%", Maxheight: "80%" }}>
 
             <div className="card-body">
                 <span className="appoint-span"><i className="fas fa-tasks appoint-icon"></i></span>
@@ -20,7 +20,7 @@ export const Longcard = () => {
 
             <div className="card-body">
                 <div className="appoint-margin">
-                    <h7 className="card-title ms-5">Appointment text</h7>
+                    <h7 className="card-title ms-5">Appointment title</h7>
                     <p className="card-text ms-5">Date and time</p>
                 </div>
             </div>

@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import { Nav2 } from "../component/nav2";
+
 import { Context } from "../store/appContext";
 import "../../styles/dashboard.css"
 import { DailyMotivation } from "../component/DailyMotivation";
 import { Nutritioncard } from "../component/NutritionCard";
-import { Modal2 } from "../component/Modal2";
 
-import { Card } from "../component/card";
+
+
 import { Longcard } from "../component/LongCard";
 
 import { Exercisecard } from "../component/ExerciseCard";
@@ -19,7 +19,7 @@ export const Dashboard = () => {
     const { store, actions } = useContext(Context);
 
     const [state, setState] = useState({
-        showModal: true,
+        
     });
 
 
@@ -77,30 +77,27 @@ export const Dashboard = () => {
             </div>
             
             </div>
-            <div className="top-div">
-            <div className="d-flex justify-content-end mt-4 mb-4">
+            <div className="top-div bg-light">
+                <div className="d-flex justify-content-end mt-3 mb-3 bg-light">
             
                 
                   
                     <i className="fab fa-hackerrank red1 profile-life-icon ms-3"></i>
             
-            </div>
+                </div>
                 
 
 
 
-                <div className="dashpage d-flex justify-content-between">
+                <div className="dashpage d-flex top-border-black justify-content-between">
 
 
-                    <div className="long-card-div">
+                    <div className="long-card-div mt-3">
                         <Longcard />
-                        <div className="d-flex"><FunFact />  <DailyMotivation /></div>
+                        <div className="d-flex mt-4"><FunFact />  <DailyMotivation /></div>
                     </div>
                     <div className="short-card-div">
-                        <Modal2
-                            show={state.showModal}
-                            onClose={() => setState({ showModal: false })}
-                        />
+                       
                         <Nutritioncard />
                         <Exercisecard />
 

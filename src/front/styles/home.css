@@ -11,7 +11,8 @@
   height: 800px;
   justify-content: center;
   text-align: center;
-  background-image: url(https://thumbs.dreamstime.com/b/senior-doctor-holding-papers-smiling-23096004.jpg);
+  background: url(https://thumbs.dreamstime.com/b/senior-doctor-holding-papers-smiling-23096004.jpg)
+    no-repeat center center fixed;
 }
 
 .navbar-brand2 {
@@ -54,4 +55,24 @@ body {
   bottom: 0;
   width: 100%;
   height: 60px; /* Height of the footer */
+}
+
+.wisdoms {
+  width: 1525px;
+}
+
+.dx-scheduler-work-space-week .dx-scheduler-header-panel-cell,
+.dx-scheduler-work-space-work-week .dx-scheduler-header-panel-cell {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.dx-scheduler-work-space .dx-scheduler-header-panel-cell .name {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.dx-scheduler-work-space .dx-scheduler-header-panel-cell .number {
+  font-size: 15px;
+  line-height: 15px;
 }
