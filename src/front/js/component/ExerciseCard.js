@@ -30,7 +30,7 @@ export const Exercisecard = (props) => {
     return (
         <div>
             <Link className="linnk" to="/exercises">
-                <div className="short-card card m-3 card-border dash-card" style={{ width: "20rem" }} >
+                <div className="short-card card m-3 card-border dash-card" style={{ width: "21rem" }} >
 
                     <div className="card-body">
 
