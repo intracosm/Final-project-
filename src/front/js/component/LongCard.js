@@ -10,7 +10,7 @@ export const Longcard = () => {
         <div className="container">
 
 
-            <div className="bigDiv long-card card ms-3 mt-2 card-border dash-card" style={{ width: "100%" }}>
+            <div className="bigDiv long-card card ms-3 mt-2 card-border dash-card" style={{ width: "50rem" }}>
                 <div className="card-body">
 
                     <span className="appoint-span">
@@ -22,8 +22,8 @@ export const Longcard = () => {
                         return (
                             <div key={index} className="appoint-margin">
                                 <h5 className="card-title ms-3">{appointment.text}</h5>
-                                <p className="card-text ms-5">{appointment.start_date.toString()}</p>
-                                <p className="card-text ms-5">{appointment.end_date.toString()}</p>
+                                <p className="card-text ms-5"><strong>From:</strong> {appointment.start_date.toString()}</p>
+                                <p className="card-text ms-5"><strong>Until:</strong> {appointment.end_date.toString()}</p>
                             </div>
                         );
                     })}
