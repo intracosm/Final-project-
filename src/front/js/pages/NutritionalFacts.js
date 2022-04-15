@@ -25,12 +25,11 @@ export const Nutritionalfacts = (props) => {
 
             <Nav2 />
 
-            <div className="nbkg d-flex justify-content-center">
-                <div className="opacity" >
+            <div className="nbkg">
+                <div className="opacity d-flex justify-content-center" >
                     <div className="card mb-3 nutritional-border" style={{ maxWidth: "65%" }}>
                         <div className="row g-0">
-                            <div className="col-md-4">
-                            </div>
+
 
                             <div className="card-body">
                                 <h1 className="card-title">{nutrition.name}</h1>
