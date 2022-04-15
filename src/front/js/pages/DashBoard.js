@@ -86,9 +86,9 @@ export const Dashboard = () => {
 
                     <div className="long-card-div mt-3">
                         <Longcard />
-                        <div className="d-flex mt-4"><FunFact />  <DailyMotivation /></div>
+                        <div className="d-flex mt-4 ms-3"><FunFact />  <DailyMotivation /></div>
                     </div>
-                    <div className="short-card-div">
+                    <div className="short-card-div mt-2">
                        
                         <Nutritioncard />
                         <Exercisecard />

@@ -21,15 +21,29 @@ export const LandingPage = () => {
             <Navbar />
             <div className="intro-logo jumbo-bg">
                 <div><Header /></div>
-                <div className="landing-middle-div d-flex justify-content-center">
-                    <div className="landing-object">
-                        <div className="d-flex justify-content-center"><img className="landing-middle-img" src="https://www.pinclipart.com/picdir/big/159-1597497_calendar-calendar-icon-png-round-clipart.png"></img></div>
-                        <div className="d-flex justify-content-center"><h1>Calendar</h1></div>
-                        <div className="d-flex justify-content-center"><p className="landing-middle-text d-flex justify-content-center">Hack into your Time by using our calendar, to schedule your appointments and your weekly workouts.</p></div>
-                        <div className="">
-                            <Link className="linnk landing-btn d-flex justify-content-center" to="/patientlogin">
-                                <button className=" pt-login-btn btn exer-button white1">Begin Here</button>
-                            </Link>
+                <div className="d-flex">
+                    <div className="landing-middle-div1 d-flex justify-content-center">
+                        <div className="landing-object1">
+                            <div className="d-flex justify-content-center"><img className="landing-middle-img" src="https://www.pinclipart.com/picdir/big/159-1597497_calendar-calendar-icon-png-round-clipart.png"></img></div>
+                            <div className="d-flex justify-content-center"><h1>Calendar</h1></div>
+                            <div className="d-flex justify-content-center"><p className="landing-middle-text d-flex justify-content-center">Hack into your Time by using our calendar, to schedule your appointments and your weekly workouts.</p></div>
+                            <div className="">
+                                <Link className="linnk landing-btn d-flex justify-content-center" to="/patientlogin">
+                                    <button className=" pt-login-btn btn exer-button white1">Begin Here</button>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="landing-middle-div d-flex justify-content-center">
+                        <div className="landing-object">
+                            <div className="d-flex justify-content-center"><img className="landing-middle-img" src="https://freepngimg.com/thumb/pills/27320-1-pills-transparent-background.png"></img></div>
+                            <div className="d-flex justify-content-center"><h1>Med Search</h1></div>
+                            <div className="d-flex justify-content-center"><p className="landing-middle-text d-flex justify-content-center">We have a database full of different meds. Learn more about medications and how they affect our bodies.</p></div>
+                            <div className="">
+                                <Link className="linnk landing-btn d-flex justify-content-center" to="/patientlogin">
+                                    <button className=" pt-login-btn btn exer-button white1">Begin Here</button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

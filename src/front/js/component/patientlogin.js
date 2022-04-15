@@ -14,26 +14,28 @@ export const PatientLogin = () => {
 
     return (
 
-        <div className="user login-wrapper col-sm-6">
+        <div className="login-img login-wrapper col-sm-6">
+            <div className="login-overlay d-flex justify-content-center">
 
-            <div className="form d-flex flex-column justify-content-center">
+                <div className="form d-flex flex-column justify-content-center">
 
-                <img src="https://static.wikia.nocookie.net/4805a75d-343f-40ea-96f3-270ef2295eec" alt=""></img>
 
-                <h2 className="pt-login text-center">Login</h2>
 
-                <div className="input-group d-flex flex-column"  >
-                    User Name <input id="loginUser" onChange={(e) => setUsername(e.target.value)} type="text"></input>
+                    <p className="text2 white1">Please Login</p>
+
+                    <div className="input-group d-flex flex-column"  >
+                        User Name <input id="loginUser" onChange={(e) => setUsername(e.target.value)} type="text"></input>
+                    </div>
+
+                    <div className="input-group d-flex flex-column">
+                        Password <input type="password" id="loginPassword" onChange={(e) => setPassword(e.target.value)} />
+                    </div>
+
+                    <Link to="/dashboard">
+                        <button className="pt-login-btn btn btn-primary">Login</button>
+                    </Link>
+
                 </div>
-
-                <div className="input-group d-flex flex-column">
-                    Password <input type="password" id="loginPassword" onChange={(e) => setPassword(e.target.value)} />
-                </div>
-
-                <Link to="/dashboard">
-                    <button className="pt-login-btn btn btn-primary">Login</button>
-                </Link>
-
             </div>
         </div>
 

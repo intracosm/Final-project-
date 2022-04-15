@@ -62,19 +62,19 @@ export const Exercise = () => {
 
 
     return (
-        <div className="dashpage">
+        <div className="exercise-page ">
 
 
             <Nav2 />
 
-            <div className="m-auto search-bar nutritional-border">
+            <div className="m-auto search-bar exercise-border">
                 <div className="d-flex justify-content-center">
                     <span>
                         <a className="navbar-brand2 " href="#"> <i className="fab fa-hackerrank exercise-icon"></i></a>
                     </span>
                 </div>
                 <div className="d-flex justify-content-center mb-3">
-                    <h2>Let's Get Pumped!</h2>
+                    <h1>Let's Get <span className="exercise-font red1">Hacked!</span></h1>
                 </div>
                 <div className="d-flex justify-content-center s-bar">
                     <input
@@ -100,9 +100,9 @@ export const Exercise = () => {
 
                     return (
                         <div className="col-md-4 d-flex justify-content-center" index={index} key={index}>
-                            <div className="card1 card search-border exercise-card card-border-exercises" style={{ width: "23rem" }}>
+                            <div className="card1 card search-border exercise-card exercise-card-border" style={{ width: "23rem" }}>
                                 <div className="exercise-card-header">
-                                    <h5 className=" d-flex justify-content-center black1 mt-2">{item.name}</h5>
+                                    <h5 className=" d-flex justify-content-center white1 mt-2">{item.name}</h5>
                                 </div>
                                 <img className="exercise-card-image" src={item.gifUrl}></img>
                                 <div className="card-body  exercise-button bg-light">

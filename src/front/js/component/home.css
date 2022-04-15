@@ -34,16 +34,21 @@
   box-shadow: 0 0 15px rgb(219, 29, 4);
 }
 
-.modald {
+.font2 {
   margin-top: 70px;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .excercisepg {
   background-image: url(https://thumbs.dreamstime.com/z/senior-people-gym-21535185.jpg);
 }
 
+.homeb {
+  background-image: url(https://previews.123rf.com/images/nyul/nyul1108/nyul110800338/10389957-mature-m%C3%A9decin-de-sexe-masculin-et-senior-patiente-se-serrant-la-main-en-souriant-.jpg);
+  height: 100vh;
+  width: auto;
+}
 body {
   font-family: "Merriweather", serif;
   margin: 0;
@@ -72,10 +77,4 @@ body {
 .dx-scheduler-work-space .dx-scheduler-header-panel-cell .number {
   font-size: 15px;
   line-height: 15px;
-}
-.sceduler {
-  border-top-left-radius: 20px !important;
-  border-bottom-left-radius: 20px !important;
-  border-top-right-radius: 20px !important;
-  border-bottom-right-radius: 20px !important;
 }

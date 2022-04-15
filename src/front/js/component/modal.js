@@ -12,7 +12,7 @@ export const Modal = () => {
     }
 
     return (
-        <div className="modald d-flex justify-content-center">
+        <div className="modald d-flex justify-content-center container">
             {show && (
                 <div className="wisdoms alert alert-success" role="alert">
                     <h4 className="alert-heading">Stay Motivated!!!</h4>

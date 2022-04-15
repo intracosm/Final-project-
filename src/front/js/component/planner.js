@@ -12,11 +12,11 @@ const views = ['day', 'week', 'workWeek', 'month'];
 
 export const Planner = () => {
     const { store, actions } = useContext(Context);
-    return (<div>
+    return (<div className='exercise-page'>
         <Nav2 />
         <Modal />
 
-        <div className="container" >
+        <div className="container pb-5 " >
             <Scheduler
                 timeZone="America/Los_Angeles"
                 dataSource={store.appointments}

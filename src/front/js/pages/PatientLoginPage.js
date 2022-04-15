@@ -12,7 +12,7 @@ export const PatientLog = () => {
 	return (
 		<div className="">
 			<Navbar />
-			<div className="homeb d-flex justify-content-center">
+			<div className=" d-flex justify-content-center">
 				<PatientLogin />
 			</div>
 
