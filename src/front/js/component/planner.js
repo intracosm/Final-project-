@@ -12,7 +12,7 @@ const views = ['day', 'week', 'workWeek', 'month'];
 
 export const Planner = () => {
     const { store, actions } = useContext(Context);
-    return (<div>
+    return (<div className="pbkg">
         <Nav2 />
         <Modal />
 
@@ -25,10 +25,11 @@ export const Planner = () => {
                 defaultCurrentDate={currentDate}
                 height={600}
                 startDayHour={9} />
-            {/* when coding the app with backend include POST/PUT? fetch instead of consolelog functionality such that you can save the current list */}
-            <button onClick={() => { console.log(store.appointments) }}>click here</button>
+
         </div>
     </div>
+        //  when coding the app with backend include POST/PUT? fetch instead of consolelog functionality such that you can save the current list
+        //  <button onClick={() => { console.log(store.appointments) }}>click here</button>
     )
 }
 
