@@ -47,28 +47,33 @@ export const Medication = () => {
     return (
         <div className="medcontent">
             <Nav2 />
-            <div className="medication-header">
-                <h3>Example conditions to search for: Leukemia, Ischemic Stroke, Abdominal Distension, Premenstrual Syndrome, Edema, etc. </h3>
+            <div className="medcontent-wrapper">
+
+                <div className="medication-header">
+                    <h3>Example conditions to search for: Leukemia, Ischemic Stroke, Abdominal Distension, Premenstrual Syndrome, Edema, etc. </h3>
+                </div>
+
+                <div className="inputdiv"><input className="medsearch" type="text" value={input} onChange={(e) => {
+                    setInput(e.target.value)
+
+                }} />
+                    <button className="btn btn-danger" onClick={() => getDrug(input)} >Search for medication</button></div>
+                {
+                    drug.length > 0 ? drug.map((item, index) => {
+                        return (
+                            <div onClick={(e) => cardClick()} className="medcd card" style={{ width: "18rem" }}>
+                                <div className="card-body">
+                                    <h5 className="card-title">{item.drug}</h5>
+                                    <p className="card-text">Disease: {item.disease}</p>
+                                    <Link to={`/detailedmed/${item.drug}`}><button className="btn btn-danger">Learn more!</button></Link>
+                                </div>
+                            </div>
+                        )
+                    }) : <div className="inputfoot"> No drug currently found... </div>
+                }
+
             </div>
 
-            <div className="inputdiv"><input className="medsearch" type="text" value={input} onChange={(e) => {
-                setInput(e.target.value)
-
-            }} />
-                <button className="btn btn-danger" onClick={() => getDrug(input)} >Search for medication</button></div>
-            {
-                drug.length > 0 ? drug.map((item, index) => {
-                    return (
-                        <div onClick={(e) => cardClick()} className="medcd card" style={{ width: "18rem" }}>
-                            <div className="card-body">
-                                <h5 className="card-title">{item.drug}</h5>
-                                <p className="card-text">Disease: {item.disease}</p>
-                                <Link to={`/detailedmed/${item.drug}`}><button className="btn btn-danger">Learn more!</button></Link>
-                            </div>
-                        </div>
-                    )
-                }) : <div className="inputfoot"> No drug currently found... </div>
-            }
         </div>
     )
 
