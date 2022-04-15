@@ -229,7 +229,7 @@ ul li .title {
 }
 .cardbtn {
   background-color: rgba(197, 197, 197, 0.13);
-
+  border: 1px solid rgb(184, 184, 184);
   color: rgb(255, 168, 168);
   border-radius: 10%;
   float: right;
@@ -370,7 +370,6 @@ ul li .title {
   margin-top: 10px;
 }
 .exer-button {
-  background-color: #ff0000;
 }
 .nutri-margin {
   margin-left: 55px;
@@ -380,7 +379,7 @@ ul li .title {
   height: 100vh;
   width: 20%;
   padding: 0;
-  background-color: rgb(204, 3, 3);
+  background-color: rgb(255, 0, 0);
   border: 1px solid rgb(204, 3, 3);
 
   float: left;
@@ -398,15 +397,15 @@ ul li .title {
 }
 
 .dash-background {
-  background-color: rgb(204, 3, 3);
+  background-color: rgb(158, 0, 0);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 .dash-top-border {
-  border-top: 2px solid rgb(204, 3, 3);
-  border-left: 2px solid rgb(204, 3, 3);
-  border-right: 2px solid rgb(204, 3, 3);
-  border-bottom: 2px solid rgb(204, 3, 3);
+  border-top: 2px solid rgb(158, 0, 0);
+  border-left: 2px solid rgb(158, 0, 0);
+  border-right: 2px solid rgb(158, 0, 0);
+  border-bottom: 2px solid rgb(158, 0, 0);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -425,11 +424,15 @@ ul li .title {
 }
 .profile-top {
   background-color: rgb(255, 0, 0);
-  border-bottom: 1px solid rgb(204, 3, 3);
+  border-bottom: 1px solid rgb(158, 0, 0);
 }
 .profile-bottom {
-  background-color: rgb(204, 3, 3);
-  border-right: rgb(204, 3, 3);
+  background-color: rgb(158, 0, 0);
+  border-right: rgb(158, 0, 0);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 .profile-icon {
   float: right;
@@ -438,11 +441,11 @@ ul li .title {
 }
 
 .profile-ul {
-  padding: 0;
+  padding: 10px;
 }
 .profile ul li {
   background-color: #ff0000;
-  margin-top: 2px;
+  margin-top: 5px;
   margin-right: 2px;
   margin-left: 2px;
 }

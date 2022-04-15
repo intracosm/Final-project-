@@ -32,7 +32,7 @@ export const Dashboard = () => {
                     </div>
                 </div>
                 <div className="profile-bottom">
-                    <ul className="profile-ul mt-3">
+                    <ul className="profile-ul">
                         <li>
                             <Link to="/dashboard" className="linne d-flex">
                             <span className="icon1"><i className="fas fa-home turn-red"></i></span>
