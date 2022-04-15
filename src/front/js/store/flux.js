@@ -46,14 +46,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 			appointments: [
 
 				{
-					text: "Submit New Website Design",
+					text: "Meeting with Nutritionist for meal planning",
 					start_date: new Date("2022-04-30T23:30:00.000Z"),
-					end_date: new Date("2022-05-01T01:00:00.000Z"),
+					end_date: new Date("2022-04-01T01:00:00.000Z"),
 				},
 				{
-					text: "Launch New Website",
-					start_date: new Date("2022-04-30T19:20:00.000Z"),
-					end_date: new Date("2022-04-30T21:00:00.000Z"),
+					text: "Meeting with workout trainer",
+					start_date: new Date("2022-05-01T19:20:00.000Z"),
+					end_date: new Date("2022-05-01T21:00:00.000Z"),
 				},
 			],
 		},

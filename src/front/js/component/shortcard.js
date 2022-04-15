@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import propTypes from "prop-types";
+import "../../styles/dashboard.css";
 
 
 export const Shortcard = (props) => {

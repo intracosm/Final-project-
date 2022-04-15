@@ -3,6 +3,7 @@ import "react-tabs/style/react-tabs.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { useLocation, useParams } from "react-router-dom";
 import { Nav2 } from "../component/nav2";
+import "../../styles/medication.css";
 
 
 
@@ -43,7 +44,7 @@ export const DetailedMed = () => {
 
 	return (
 
-		<div>
+		<div className="deets" >
 			<Nav2 />
 			{/* {/* <div className="row">
 				<div className="col-12">
@@ -52,7 +53,7 @@ export const DetailedMed = () => {
 			// </div > * /} */}
 
 
-			< div className="container m-auto row" >
+			< div className="dtstxt container m-auto row" >
 				<div>
 					{/* Nav tabs start */}
 					<Tabs>
