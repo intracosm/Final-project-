@@ -62,7 +62,7 @@ export const Medication = () => {
                     {
                         drug.length > 0 ? drug.map((item, index) => {
                             return (
-                                <div onClick={(e) => cardClick()} className="medcd card" style={{ width: "18rem" }}>
+                                <div onClick={(e) => cardClick()} className="medcd card" style={{ width: "18rem", height: "10rem" }}>
                                     <div className="card-body">
                                         <h5 className="card-title">{item.drug}</h5>
                                         <p className="card-text">Disease: {item.disease}</p>
@@ -70,7 +70,7 @@ export const Medication = () => {
                                     </div>
                                 </div>
                             )
-                        }) : <div className="inputfoot"> No drug currently found... </div>
+                        }) : ""
                     }
 
                 </div>
