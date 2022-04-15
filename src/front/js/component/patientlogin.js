@@ -18,7 +18,7 @@ export const PatientLogin = () => {
 
             <div className="form d-flex flex-column justify-content-center">
 
-                <img src="https://thumbs.dreamstime.com/b/senior-man-winning-computer-game-16618154.jpg" alt=""></img>
+                <img src="https://static.wikia.nocookie.net/4805a75d-343f-40ea-96f3-270ef2295eec" alt=""></img>
 
                 <h2 className="pt-login text-center">Login</h2>
 
@@ -31,7 +31,7 @@ export const PatientLogin = () => {
                 </div>
 
                 <Link to="/dashboard">
-                    <button className="pt-login-btn btn btn-primary">login</button>
+                    <button className="pt-login-btn btn btn-primary">Login</button>
                 </Link>
 
             </div>

@@ -47,7 +47,10 @@ export const Medication = () => {
     return (
         <div className="medcontent">
             <Nav2 />
-            <h3>Example conditions to search for: Leukemia, Ischemic Stroke, Abdominal Distension, Premenstrual Syndrome, Edema, etc. </h3>
+            <div className="medication-header">
+                <h3>Example conditions to search for: Leukemia, Ischemic Stroke, Abdominal Distension, Premenstrual Syndrome, Edema, etc. </h3>
+            </div>
+
             <div className="inputdiv"><input className="medsearch" type="text" value={input} onChange={(e) => {
                 setInput(e.target.value)
 
