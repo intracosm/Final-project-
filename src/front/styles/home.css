@@ -43,7 +43,7 @@
 }
 
 .homeb {
-  background-image: url(https://previews.123rf.com/images/nyul/nyul1108/nyul110800338/10389957-mature-m%C3%A9decin-de-sexe-masculin-et-senior-patiente-se-serrant-la-main-en-souriant-.jpg);
+  background-image: url(https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1219&q=80);
   height: 100vh;
   width: auto;
 }
@@ -75,4 +75,17 @@ body {
 .dx-scheduler-work-space .dx-scheduler-header-panel-cell .number {
   font-size: 15px;
   line-height: 15px;
+}
+
+.nbkg {
+  background: url(https://images.unsplash.com/photo-1540539234-c14a20fb7c7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+
+  background-size: cover;
+}
+
+.opacity {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.356);
+  padding: 30px;
 }
