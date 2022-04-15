@@ -1,15 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-
 import { Context } from "../store/appContext";
 import "../../styles/dashboard.css"
 import { DailyMotivation } from "../component/DailyMotivation";
 import { Nutritioncard } from "../component/NutritionCard";
-
-
-
 import { Longcard } from "../component/LongCard";
-
 import { Exercisecard } from "../component/ExerciseCard";
 import { FunFact } from "../component/funfact";
 
@@ -21,9 +16,6 @@ export const Dashboard = () => {
     const [state, setState] = useState({
         
     });
-
-
-
 
 
     return (

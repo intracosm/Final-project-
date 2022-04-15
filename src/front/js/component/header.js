@@ -12,7 +12,7 @@ export const Header = () => {
                 <h3 className="header-quote d-flex justify-content-start ms-5">'Success is the progressive realization of predetermined, worthwhile, personal goals'</h3>
                 <div className="login-button d-flex justify-content-start ms-5 ">
                     <Link to="/patientlogin">
-                        <button className="pt-login-btn btn btn-primary d-flex justify-content-center">Login</button>
+                        <button className="pt-login-btn btn btn-primary d-flex justify-content-center">Get started!</button>
                     </Link>
                 </div>
             </div>
